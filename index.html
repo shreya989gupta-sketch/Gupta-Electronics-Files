@@ -3,67 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gupta Electronics - Dhar Road, Manawar (M.P.) • Owner: Suresh Gupta. Authorized partner for Havells, Bajaj, Crompton, Polycab, Philips & Anchor. Ceiling Fans, Modular Switches, Tubelights & Bulbs, Certified Repair.">
-  <meta name="keywords" content="Gupta Electronics, Suresh Gupta, Manawar, Dhar Road Manawar, Havells, Bajaj, Fans, Switches, Tubelights, Bulbs, repair services">
+  <meta name="description" content="Gupta Electronics - Dhar Road, Manawar (M.P.) • Owner: Suresh Gupta. Authorized dealer for Havells, Bajaj, Samsung, LG, Crompton, Philips, Whirlpool, Lloyd, Orient & V-Guard. Explore genuine electronics, appliances & certified repair services.">
+  <meta name="keywords" content="Gupta Electronics, Suresh Gupta, Manawar, Dhar Road Manawar, Havells, Bajaj, Samsung, LG, Crompton, Philips, Whirlpool, Lloyd, Orient, V-Guard, Electrical Repair, Home Appliances">
   <meta name="author" content="Suresh Gupta - Gupta Electronics">
-  <title>Gupta Electronics | Dhar Road, Manawar (M.P.) - Owner: Suresh Gupta</title>
+  <title>Gupta Electronics | Dhar Road, Manawar (M.P.) - Suresh Gupta</title>
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e5ff'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+  <link rel="icon" type="image/png" href="assets/logo.png"><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
 </head>
 <body>
 
   <!-- ==========================================================================
-       Site Header & Navigation
-       (Menu contains strictly: Home Page, Fan, Switches, Tubelights&bulbs)
+       TOP NAVIGATION BAR
+       Strictly contains the 5 requested menu options:
+       Home Page, FAN, Switches, Tubelights & bulbs, Wires
        ========================================================================== -->
   <header class="site-header" id="siteHeader">
-    <div class="container nav-container">
-      <a href="#home" class="brand-logo" id="brandLogo">
-        <div class="brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-          </svg>
-        </div>
+    <div class="ge-wrap nav-flex">
+      <a href="index.html" class="brand-logo" id="brandLogo">
+        <div class="brand-icon"><img src="assets/logo.png" alt="Gupta Electronics Logo" class="brand-logo-img"></div>
         <div class="brand-info">
           <span class="brand-name">GUPTA <span>ELECTRONICS</span></span>
           <span class="brand-tagline">Since 1998 • Manawar (M.P.)</span>
         </div>
       </a>
 
-      <!-- Desktop & Mobile Navigation (ONLY the 4 requested options) -->
+      <!-- Navigation Menu -->
       <nav class="nav-menu" id="navMenu">
-        <a href="#home" class="nav-link active">Home Page</a>
-        <a href="#fans" class="nav-link">Fan</a>
-        <a href="#switches" class="nav-link">Switches</a>
-        <a href="#tubelights-bulbs" class="nav-link">Tubelights&bulbs</a>
+        <a href="index.html" class="nav-link active">Home Page</a>
+        <a href="fans.html" class="nav-link">FAN</a>
+        <a href="switches.html" class="nav-link">Switches</a>
+        <a href="tubelights-bulbs.html" class="nav-link">Tubelights & bulbs</a>
+        <a href="wires.html" class="nav-link">Wires</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <!-- Theme Toggle -->
-        <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Theme">
-          <svg id="themeIconSun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-
         <!-- Direct Call to Suresh Gupta -->
-        <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta">
+        <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta Directly">
+          <span class="live-pulse"></span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
@@ -71,7 +55,7 @@
         </a>
 
         <!-- Mobile Menu Toggle Button -->
-        <button class="menu-toggle" id="menuToggleBtn" aria-label="Open mobile navigation">
+        <button class="menu-toggle" id="menuToggleBtn" aria-label="Toggle navigation menu">
           <span></span>
           <span></span>
           <span></span>
@@ -80,866 +64,845 @@
     </div>
   </header>
 
-  <main>
-    <!-- ==========================================================================
-         Full-Screen Home Page Image Slider
-         - Images slide every 2 seconds
-         - Overlay text on top
-         - Exactly 2 buttons: "Explore" (opens Fan) & "Contact Us" (opens Contact Form)
-         ========================================================================== -->
-    <section class="fullscreen-hero" id="home">
-      <!-- Background Slider Track -->
-      <div class="slider-track" id="heroSliderTrack">
-        <!-- Slide 1: Fans -->
-        <div class="hero-slide active" data-index="0" style="background-image: url('assets/fans.jpg');">
-          <div class="slide-overlay"></div>
+  <div id="gupta-electronics-site">
+    <main>
+      <!-- ==========================================================================
+           1. HOME (HERO) SECTION
+           ========================================================================== -->
+      <section class="ge-hero" id="ge-home">
+        <!-- Background Slider (Auto-changes every 2 seconds with Zoom In & Out Ken Burns Effect) -->
+        <div class="ge-hero-slides" id="geHeroSlides" aria-hidden="true">
+          <img class="ge-hero-slide is-active" src="assets/about_showroom.jpg" alt="Gupta Electronics Manawar Grand Showroom">
+          <img class="ge-hero-slide" src="assets/slide2_fans.jpg" alt="Designer & BLDC Ceiling Fans Collection">
+          <img class="ge-hero-slide" src="assets/slide3_switches.jpg" alt="Luxury Modular Switches & Touch Boards">
+          <img class="ge-hero-slide" src="assets/slide4_lighting.jpg" alt="Architectural LED Tubelights & False Ceiling Panels">
         </div>
-        <!-- Slide 2: Switches -->
-        <div class="hero-slide" data-index="1" style="background-image: url('assets/switches.jpg');">
-          <div class="slide-overlay"></div>
-        </div>
-        <!-- Slide 3: Tubelights & Bulbs -->
-        <div class="hero-slide" data-index="2" style="background-image: url('assets/appliances.jpg');">
-          <div class="slide-overlay"></div>
-        </div>
-        <!-- Slide 4: Showroom & Store -->
-        <div class="hero-slide" data-index="3" style="background-image: url('assets/hero.jpg');">
-          <div class="slide-overlay"></div>
-        </div>
-      </div>
 
-      <!-- Text Overlay directly over image -->
-      <div class="hero-text-overlay">
-        <div class="container hero-content-box">
-          <div class="hero-badge">
-            <span class="pulse-dot"></span>
-            <span>⭐ Dhar Road, Manawar (M.P.) • Owner: Suresh Gupta</span>
-          </div>
-
-          <h1 class="hero-title">
-            Welcome to <span class="gradient-text">Gupta Electronics</span>
-          </h1>
-
-          <p class="hero-tagline">
-            Your trusted store for <strong>Ceiling Fans</strong>, luxury <strong>Modular Switches</strong>, energy-saving <strong>Tubelights & Bulbs</strong>. Authorized partner for Havells, Bajaj, Crompton & Anchor.
-          </p>
-
-          <div class="hero-owner-pill">
-            <div class="owner-avatar">SG</div>
-            <div class="owner-info">
-              <span class="owner-name-label">Proprietor: <strong>Suresh Gupta</strong></span>
-              <span class="owner-exp">25+ Years of Dedicated Service in Manawar</span>
+        <div class="ge-wrap ge-hero-grid">
+          <div class="ge-hero-content ge-reveal">
+            <!-- Location & Proprietor Badge -->
+            <div class="ge-hero-badge">
+              <span class="ge-pulse-dot"></span>
+              <span>Dhar Road, Manawar (M.P.) • Proprietor: Suresh Gupta</span>
             </div>
-          </div>
 
-          <!-- EXACTLY 2 BUTTONS AS REQUESTED -->
-          <div class="hero-cta-buttons">
-            <!-- Button 1: Explore (Opens Fan Section) -->
-            <a href="#fans" class="btn btn-primary" id="heroExploreBtn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polygon points="12 8 8 12 12 16 12 8"></polygon>
-              </svg>
-              Explore
-            </a>
+            <!-- Hero Main Heading -->
+            <h1>Smart Living Starts<br>with <span>Reliable Choices.</span></h1>
 
-            <!-- Button 2: Contact Us (Directly jumps to Contact Us form) -->
-            <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              Contact Us
-            </a>
-          </div>
+            <!-- Hero Subtext -->
+            <p>Welcome to Gupta Electronics, Manawar's trusted destination for genuine BLDC fans, modular switches, flicker-free LED tubelights, and 100% pure copper wires with authorized manufacturer warranty.</p>
 
-          <!-- Slider Controls & 2-Second Progress Bar -->
-          <div class="slider-controls">
-            <button class="slider-arrow prev" id="sliderPrevBtn" aria-label="Previous Slide">‹</button>
-            <div class="slider-dots" id="sliderDots">
-              <span class="dot active" data-slide="0" title="Ceiling Fans"></span>
-              <span class="dot" data-slide="1" title="Modular Switches"></span>
-              <span class="dot" data-slide="2" title="Tubelights & Bulbs"></span>
-              <span class="dot" data-slide="3" title="Gupta Electronics Store"></span>
+            <!-- Dynamic 2-Second Animated Product Category Pill -->
+            <div class="ge-hero-dynamic-pill" id="heroDynamicPill">
+              <span class="pill-spark">⚡</span>
+              <span class="pill-text" id="heroPillText">Gupta Electronics • Dhar Road, Manawar (Since 1998)</span>
             </div>
-            <button class="slider-arrow next" id="sliderNextBtn" aria-label="Next Slide">›</button>
-            <div class="slide-timer-bar">
-              <div class="timer-fill" id="timerFill"></div>
+
+            <!-- 2 Buttons: Explore Services & Contact Us -->
+            <div class="ge-hero-actions">
+              <a class="ge-btn ge-3d-btn" href="#ge-services" id="heroExploreBtn">Explore Services ↗</a>
+              <a class="ge-btn ge-outline ge-3d-btn" href="#ge-contact" id="heroContactBtn">Contact Us</a>
+            </div>
+
+            <!-- Slide Progress Timer Indicator (Auto-changing every 2 seconds) -->
+            <div class="ge-timer-container" title="Auto-changing every 2 seconds">
+              <div class="ge-timer-bar" id="geTimerBar"></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ==========================================================================
-         Product Categories: Fan, Switches, Tubelights&bulbs
-         ========================================================================== -->
-    <section class="section products-section">
-      <div class="container">
+        <!-- Hero Slider Dots (4 Slides) -->
+        <div class="ge-dots" id="geDots" aria-label="Slide Navigation">
+          <button type="button" class="ge-dot is-active" aria-label="Slide 1 - Store Showcase"></button>
+          <button type="button" class="ge-dot" aria-label="Slide 2 - Fans Collection"></button>
+          <button type="button" class="ge-dot" aria-label="Slide 3 - Switches & Sockets"></button>
+          <button type="button" class="ge-dot" aria-label="Slide 4 - Tubelights & Bulbs"></button>
+        </div>
+      </section>
 
-        <!-- 1. Fan Category (#fans) - Opened by 'Explore' button -->
-        <div class="category-block" id="fans">
-          <div class="category-header">
-            <div class="category-tag">Category 1</div>
-            <h2 class="category-title">🌀 Ceiling Fans, BLDC & Exhaust Fans</h2>
-            <p class="category-desc">High air delivery with minimal electricity consumption. Wide range of Havells, Bajaj, Crompton, Orient & Atomberg fans.</p>
+      <!-- ==========================================================================
+           2. BRANDS SECTION (Interactive 3D Circular Orbit Layout)
+           ========================================================================== -->
+      <section class="ge-section ge-orbit-section" id="ge-brands">
+        <!-- 3D Cosmic Space Glow & Ambient Starfield -->
+        <div class="ge-orbit-ambient-glow" aria-hidden="true"></div>
+
+        <div class="ge-wrap">
+          <div class="ge-heading ge-reveal">
+            <div class="ge-kicker"><span class="ge-spark-icon">⚡</span> Authorized Brand Universe</div>
+            <h2>Brands We Offer</h2>
+            <p>100% Genuine, company-sealed products backed by authorized brand warranties at Suresh Gupta's showroom in Manawar. Explore our interactive 3D solar brand orbit below.</p>
           </div>
-          <div class="category-grid">
-            <div class="product-card">
-              <div class="product-badge">Energy Saver</div>
-              <img src="assets/fans.jpg" alt="BLDC Smart Ceiling Fan" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Havells / Bajaj / Atomberg</span>
-                <h3 class="product-name">BLDC 28W Energy-Saving Ceiling Fan</h3>
-                <p class="product-info">Saves up to 65% electricity! Remote controlled with sleep mode, silent operation, and high-speed copper motor.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 2-3 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20BLDC%20Fans" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
-              </div>
+
+          <!-- Orbit Interactive Top Control Bar -->
+          <div class="ge-orbit-toolbar ge-reveal">
+            <!-- View Mode Switcher -->
+            <div class="ge-orbit-view-modes">
+              <button type="button" class="ge-orbit-mode-btn is-active" id="btnOrbitView" aria-pressed="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-30 12 12)"></ellipse></svg>
+                <span>3D Solar Orbit</span>
+              </button>
+              <button type="button" class="ge-orbit-mode-btn" id="btnGridView" aria-pressed="false">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg>
+                <span>Showcase Grid</span>
+              </button>
             </div>
 
-            <div class="product-card">
-              <div class="product-badge">High Speed</div>
-              <img src="assets/fans.jpg" alt="Decorative High Speed Ceiling Fan" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Bajaj / Crompton / Orient</span>
-                <h3 class="product-name">Decorative High-Speed Ceiling Fan</h3>
-                <p class="product-info">Premium metallic finish, double ball bearing for long life, aerodynamic wide blades for maximum air throw.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 2 Year Brand Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Decorative%20Fans" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
-              </div>
-            </div>
+            <!-- Orbit Dynamic Action Controls -->
+            <div class="ge-orbit-actions" id="orbitActionControls">
+              <!-- Play / Pause Orbit -->
+              <button type="button" class="ge-orbit-action-btn" id="btnOrbitPlayPause" title="Pause or Resume Orbit Rotation">
+                <span class="btn-icon" id="playPauseIcon">⏸</span>
+                <span id="playPauseText">Pause</span>
+              </button>
 
-            <div class="product-card">
-              <div class="product-badge">Heavy Duty</div>
-              <img src="assets/appliances.jpg" alt="Kitchen & Bathroom Exhaust Fans" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Havells / Bajaj</span>
-                <h3 class="product-name">High Suction Ventilation & Exhaust Fan</h3>
-                <p class="product-info">Rust-proof body, powerful motor for kitchen smoke and moisture removal with automatic dust shutter.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 1 Year Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Exhaust%20Fans" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
+              <!-- 3D Perspective Tilt Angle Toggle -->
+              <button type="button" class="ge-orbit-action-btn" id="btnOrbitTilt" title="Toggle 3D Perspective Inclination">
+                <span class="btn-icon">📐</span>
+                <span id="tiltText">3D Tilt View</span>
+              </button>
+
+              <!-- Orbit Speed Toggle -->
+              <div class="ge-orbit-speed-group">
+                <span class="ge-speed-label">Speed:</span>
+                <button type="button" class="ge-speed-pill is-active" data-speed="1" title="Normal Orbit Speed">1x</button>
+                <button type="button" class="ge-speed-pill" data-speed="2" title="Fast Orbit Speed">2x</button>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- 2. Switches Category (#switches) -->
-        <div class="category-block" id="switches">
-          <div class="category-header">
-            <div class="category-tag">Category 2</div>
-            <h2 class="category-title">🔘 Modular Switches & Luxury Touch Plates</h2>
-            <p class="category-desc">Modern sleek switch plates, soft-click switches, fan regulators, sockets, and heavy-duty MCBs from Anchor, Goldmedal & Legrand.</p>
-          </div>
-          <div class="category-grid">
-            <div class="product-card">
-              <div class="product-badge">Luxury Range</div>
-              <img src="assets/switches.jpg" alt="Glass Plate Modular Switches" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Anchor Roma / Goldmedal</span>
-                <h3 class="product-name">Luxury Glass Modular Plates & Switches</h3>
-                <p class="product-info">Scratch-resistant tempered glass finish in black, white, and wood textures with silver contact durability.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 10 Year Guarantee</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Modular%20Switches" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
+          <!-- 3D Orbit Stage Arena Container -->
+          <div class="ge-orbit-arena ge-reveal" id="geOrbitArena">
+            <!-- Perspective Camera Stage -->
+            <div class="ge-orbit-stage" id="geOrbitStage">
+              
+              <!-- Orbital Ring 2 (Outer Orbit: 7 Home Appliance & Tech Brands) -->
+              <div class="ge-orbit-track ge-orbit-outer" id="geOrbitOuter" data-speed-factor="0.7">
+                <div class="ge-orbit-line" aria-hidden="true"></div>
+
+                <!-- 1. Samsung -->
+                <div class="ge-orbit-item" data-brand="samsung" data-index="0" style="--i:0; --total:7; --brand-color:#0070f3;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Samsung - Smart TVs, Refrigerators & ACs">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#38bdf8;">Samsung</span>
+                      <span class="ge-planet-sub">Smart Inverter</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 2. LG -->
+                <div class="ge-orbit-item" data-brand="lg" data-index="1" style="--i:1; --total:7; --brand-color:#e91e63;">
+                  <button type="button" class="ge-orbit-planet" aria-label="LG - AI Dual Inverter & Appliances">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#f43f5e;">LG</span>
+                      <span class="ge-planet-sub">AI ThinQ</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 3. Whirlpool -->
+                <div class="ge-orbit-item" data-brand="whirlpool" data-index="2" style="--i:2; --total:7; --brand-color:#3b82f6;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Whirlpool - Refrigerators & Washers">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#60a5fa;">Whirlpool</span>
+                      <span class="ge-planet-sub">6th Sense</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 4. Lloyd -->
+                <div class="ge-orbit-item" data-brand="lloyd" data-index="3" style="--i:3; --total:7; --brand-color:#06b6d4;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Lloyd - Heavy-Duty ACs & Freezers">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#22d3ee;">Lloyd</span>
+                      <span class="ge-planet-sub">By Havells</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 5. Bajaj -->
+                <div class="ge-orbit-item" data-brand="bajaj" data-index="4" style="--i:4; --total:7; --brand-color:#ff7043;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Bajaj - High-Torque Fans & Geysers">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#ff8a65;">BAJAJ</span>
+                      <span class="ge-planet-sub">Appliances</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 6. Orient -->
+                <div class="ge-orbit-item" data-brand="orient" data-index="5" style="--i:5; --total:7; --brand-color:#fb7185;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Orient - Aero Series Silent Fans">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#fb7185;">Orient</span>
+                      <span class="ge-planet-sub">Aero Series</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 7. V-Guard -->
+                <div class="ge-orbit-item" data-brand="vguard" data-index="6" style="--i:6; --total:7; --brand-color:#10b981;">
+                  <button type="button" class="ge-orbit-planet" aria-label="V-Guard - Stabilizers & Submersible Cables">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#34d399;">V-Guard</span>
+                      <span class="ge-planet-sub">Stabilizers</span>
+                    </div>
+                  </button>
                 </div>
               </div>
-            </div>
 
-            <div class="product-card">
-              <div class="product-badge">Safety First</div>
-              <img src="assets/switches.jpg" alt="Safety MCB and Isolator" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Havells / Schneider</span>
-                <h3 class="product-name">MCB, RCCB & Distribution Box</h3>
-                <p class="product-info">Immediate tripping protection against short circuits and electric shocks. Safe protection for home appliances.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ ISI Certified</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20MCB" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
+              <!-- Orbital Ring 1 (Inner Orbit: 5 Core Electrical Giants) -->
+              <div class="ge-orbit-track ge-orbit-inner" id="geOrbitInner" data-speed-factor="1.0">
+                <div class="ge-orbit-line" aria-hidden="true"></div>
+
+                <!-- 1. Havells -->
+                <div class="ge-orbit-item is-featured is-active" data-brand="havells" data-index="0" style="--i:0; --total:5; --brand-color:#ff3838;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Havells - BLDC Fans, Wires & Fabio Switches">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#ff4444;">Havells</span>
+                      <span class="ge-planet-sub">Fans & Wires</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 2. Polycab -->
+                <div class="ge-orbit-item" data-brand="polycab" data-index="1" style="--i:1; --total:5; --brand-color:#a855f7;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Polycab - 100% Pure Copper Wires">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#c084fc;">Polycab</span>
+                      <span class="ge-planet-sub">Pure Copper</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 3. Anchor Roma -->
+                <div class="ge-orbit-item" data-brand="anchor" data-index="2" style="--i:2; --total:5; --brand-color:#f59e0b;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Anchor Roma - Panasonic Modular Switches">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#fbbf24;">Anchor</span>
+                      <span class="ge-planet-sub">Roma Switches</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 4. Crompton -->
+                <div class="ge-orbit-item" data-brand="crompton" data-index="3" style="--i:3; --total:5; --brand-color:#d6ad62;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Crompton - Energion BLDC Fans & Water Pumps">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#f5d28b;">Crompton</span>
+                      <span class="ge-planet-sub">Energion BLDC</span>
+                    </div>
+                  </button>
+                </div>
+
+                <!-- 5. Philips -->
+                <div class="ge-orbit-item" data-brand="philips" data-index="4" style="--i:4; --total:5; --brand-color:#38bdf8;">
+                  <button type="button" class="ge-orbit-planet" aria-label="Philips - LED Battens & Panel Lighting">
+                    <div class="ge-planet-glow"></div>
+                    <div class="ge-planet-core">
+                      <span class="ge-planet-logo" style="color:#38bdf8;">PHILIPS</span>
+                      <span class="ge-planet-sub">EyeComfort LED</span>
+                    </div>
+                  </button>
                 </div>
               </div>
+
+              <!-- Central 3D Core Hub (Nucleus of Gupta Electronics) -->
+              <div class="ge-orbit-core-hub" id="orbitCoreHub" title="Gupta Electronics Central Hub">
+                <div class="ge-core-rings" aria-hidden="true">
+                  <div class="ge-ring-pulse r1"></div>
+                  <div class="ge-ring-pulse r2"></div>
+                  <div class="ge-ring-pulse r3"></div>
+                </div>
+                <div class="ge-core-sun-sphere">
+                  <div class="ge-sun-shine"></div>
+                  <div class="ge-sun-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                  </div>
+                  <span class="ge-sun-brand">GUPTA</span>
+                  <span class="ge-sun-accent">ELECTRONICS</span>
+                  <span class="ge-sun-badge">Authorized Center</span>
+                  <span class="ge-sun-years">Since 1998 • Manawar</span>
+                </div>
+              </div>
+
             </div>
 
-            <div class="product-card">
-              <div class="product-badge">Smart Tech</div>
-              <img src="assets/switches.jpg" alt="Smart Touch Switches" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Goldmedal / Smart Home</span>
-                <h3 class="product-name">Feather Touch Smart Backlit Switches</h3>
-                <p class="product-info">Illuminated touch controls for modern interiors with smooth feather-touch response and app connectivity.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ Smart Automation</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Touch%20Switches" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
+            <!-- Interactive 3D Orbit Tip -->
+            <div class="ge-orbit-interact-tip">
+              <span class="ge-tip-icon">✨</span>
+              <span>Click or tap any brand planet to direct inquire on WhatsApp • Hover to pause 3D orbit</span>
+            </div>
+          </div>
+
+          <!-- 3D Grid View (Alternative View Mode) -->
+          <div class="ge-brand-grid-view" id="brandGridView" style="display: none;">
+            <div class="ge-brand-grid-3d" id="brandGridCardsWrap">
+              <!-- Dynamically populated or rendered 12 3D brand cards -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           3. SERVICES SECTION (6 Core Services with Images, Dark Glass & Gold Accents)
+           ========================================================================== -->
+      <section class="ge-section ge-pale" id="ge-services">
+        <div class="ge-wrap">
+          <div class="ge-heading ge-reveal">
+            <div class="ge-kicker">Our Services</div>
+            <h2>Services</h2>
+            <p>Reliable doorstep assistance, guaranteed parts and professional support in Manawar backed by Suresh Gupta’s 25+ years experience.</p>
+          </div>
+
+          <div class="ge-services">
+            <!-- 1. Repair Assistance -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/service.jpg" alt="Electrical repair assistance">
+                <span class="ge-service-badge">Service 01</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>Repair Assistance</h3>
+                <p>Enquire about appliance and electrical product repair options for fans, motors, wiring sparks, and home electricals with pure copper rewinding.</p>
+                <a href="tel:9981082392" class="ge-service-action">
+                  <span>Book Repair Assistance</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. Installation Support -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/fans.jpg" alt="Installation support">
+                <span class="ge-service-badge">Service 02</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>Installation Support</h3>
+                <p>Ask about installation assistance for eligible products including ceiling fans, exhaust fans, chandelier lights, and modular switchboards.</p>
+                <a href="tel:9981082392" class="ge-service-action">
+                  <span>Request Electrician</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. Replacement -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/appliances.jpg" alt="Product replacement">
+                <span class="ge-service-badge">Service 03</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>Replacement</h3>
+                <p>Enquire about replacement options according to product terms and availability for in-warranty LED bulbs, battens, and switches right at our counter.</p>
+                <a href="#ge-contact" class="ge-service-action">
+                  <span>Check Replacement</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. Product Guidance -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/service_product_guidance.jpg" alt="Home appliance product guidance">
+                <span class="ge-service-badge">Service 04</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>Product Guidance</h3>
+                <p>Get information to help compare available products for your needs. Expert advice from Suresh Gupta on BLDC savings, wire thickness, and room lumens.</p>
+                <a href="#ge-contact" class="ge-service-action">
+                  <span>Consult Suresh Gupta</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. Warranty Information -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/switches.jpg" alt="Product warranty check">
+                <span class="ge-service-badge">Service 05</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>Warranty Information</h3>
+                <p>Ask about product warranty details and manufacturer support from Havells, Bajaj, Samsung, LG, Crompton, Philips, Whirlpool, Lloyd, and Orient.</p>
+                <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20have%20a%20question%20about%20brand%20warranty." target="_blank" rel="noopener" class="ge-service-action">
+                  <span>Inquire Warranty</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. After-Sales Support -->
+            <article class="ge-service-card ge-reveal">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-service-image">
+                <img loading="lazy" src="assets/service_after_sales.jpg" alt="After-Sales Customer assistance">
+                <span class="ge-service-badge">Service 06</span>
+              </div>
+              <div class="ge-service-body">
+                <h3>After-Sales Support</h3>
+                <p>Contact us for assistance after purchasing your product. Enjoy continuous guidance, maintenance tips, and direct phone help with Suresh Gupta.</p>
+                <a href="tel:9981082392" class="ge-service-action">
+                  <span>Call Helpline: 9981082392</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           4. ABOUT US SECTION (One Side Real Shop Photo, One Side Story + Trust Points)
+           ========================================================================== -->
+      <section class="ge-section" id="ge-about">
+        <div class="ge-wrap ge-about">
+          <!-- Image Side with User's Real Shop Counter Photo -->
+          <div class="ge-about-image ge-reveal">
+            <div class="ge-about-img-box" id="aboutImgBox">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <img loading="lazy" src="assets/real_shop.jpg" alt="Gupta Electronics shop on Dhar Road, Manawar">
+              <div class="ge-about-experience-pill">
+                <strong>25+</strong>
+                <span>Years of Electrical Excellence in Manawar</span>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- 3. Tubelights & Bulbs Category (#tubelights-bulbs) -->
-        <div class="category-block" id="tubelights-bulbs">
-          <div class="category-header">
-            <div class="category-tag">Category 3</div>
-            <h2 class="category-title">💡 Tubelights & Energy-Saving LED Bulbs</h2>
-            <p class="category-desc">Bright, flicker-free, and eye-friendly illumination with LED batten tubelights, emergency inverter bulbs, and false-ceiling downlights.</p>
-          </div>
-          <div class="category-grid">
-            <div class="product-card">
-              <div class="product-badge">Super Bright</div>
-              <img src="assets/appliances.jpg" alt="LED Batten Tubelight" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Philips / Bajaj / Syska</span>
-                <h3 class="product-name">20W / 36W LED Batten Tubelights</h3>
-                <p class="product-info">Flicker-free instant light, 4kV surge protection, wide optical spread, and low power consumption.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 1-2 Year Guarantee</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20LED%20Tubelights" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="product-badge">Emergency Backup</div>
-              <img src="assets/appliances.jpg" alt="Inverter Emergency LED Bulb" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Bajaj / Philips / Halonix</span>
-                <h3 class="product-name">Emergency Inverter LED Bulb (9W / 12W)</h3>
-                <p class="product-info">Provides 4 hours of bright light during power cuts! Auto-charges when normal power is active.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 1 Year Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Inverter%20Bulb" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="product-badge">Modern Interior</div>
-              <img src="assets/appliances.jpg" alt="Concealed Downlights & Panel Lights" class="product-img" loading="lazy">
-              <div class="product-details">
-                <span class="product-brand">Havells / Philips</span>
-                <h3 class="product-name">Ceiling Downlights & Slim Panel Lights</h3>
-                <p class="product-info">Ultra-thin circular and square panel lights in Cool White, Warm White, and Natural White for elegant ceilings.</p>
-                <div class="product-footer">
-                  <span class="warranty-tag">🛡️ 2 Year Guarantee</span>
-                  <a href="https://wa.me/919981082392?text=Inquiry%20for%20Panel%20Lights" target="_blank" rel="noopener" class="btn-sm">Inquire on WhatsApp</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Brands Section (Before Services as Requested)
-         Interactive animated cards for Havells, Bajaj, Crompton, Polycab, Philips, Anchor
-         Clicking any brand card plays an interactive animation & badge pop!
-         ========================================================================== -->
-    <section class="section brands-section" id="brands">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-            </svg>
-            Authorized Brand Partnerships
-          </div>
-          <h2 class="section-title">We Proudly Partner With <span class="gradient-text">Top Brands</span></h2>
-          <p class="section-subtitle">
-            Gupta Electronics is an authorized dealer for India's most trusted electrical brands. <em>(Click any brand below to see animated verification & details!)</em>
-          </p>
-        </div>
-
-        <div class="brands-interactive-grid">
-          <!-- Brand 1: Havells (Specifically Mentioned) -->
-          <div class="brand-card" data-brand="Havells" data-info="Authorized dealer for Havells Fans, LED Lighting, Modular Switches & Flame-Retardant Wires with 100% Brand Warranty.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">HAVELLS</div>
-              <span class="brand-category-tag">Fans • Lighting • Wires</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-
-          <!-- Brand 2: Bajaj (Specifically Mentioned) -->
-          <div class="brand-card" data-brand="Bajaj" data-info="Official partner for Bajaj High-Speed Ceiling Fans, LED Batten Tubelights, Inverter Bulbs & Appliances.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">BAJAJ</div>
-              <span class="brand-category-tag">Fans • Bulbs • Appliances</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-
-          <!-- Brand 3: Crompton -->
-          <div class="brand-card" data-brand="Crompton" data-info="Genuine stockist for Crompton Silent Pro BLDC Fans, Exhaust Fans & Energy-Saving Illumination.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">CROMPTON</div>
-              <span class="brand-category-tag">BLDC Fans • Exhaust • Pumps</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-
-          <!-- Brand 4: Polycab -->
-          <div class="brand-card" data-brand="Polycab" data-info="Authorized seller for Polycab 100% Pure Copper FR/FRLSH Certified House Wiring Cables.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">POLYCAB</div>
-              <span class="brand-category-tag">Certified Copper Wires</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-
-          <!-- Brand 5: Philips -->
-          <div class="brand-card" data-brand="Philips" data-info="Guaranteed original Philips LED Tubelights, Downlights, Smart Wi-Fi Bulbs & EyeComfort lighting.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">PHILIPS</div>
-              <span class="brand-category-tag">LED Tubelights & Bulbs</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-
-          <!-- Brand 6: Anchor by Panasonic -->
-          <div class="brand-card" data-brand="Anchor by Panasonic" data-info="Complete collection of Anchor Roma Modular Switches, Luxury Glass Frames, Sockets & Accessories.">
-            <div class="brand-card-inner">
-              <div class="brand-sparkle"></div>
-              <div class="brand-logo-text">ANCHOR</div>
-              <span class="brand-category-tag">Modular Switches & Plates</span>
-              <p class="brand-click-hint">Click for Animation ✨</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Brand Animation Popover / Notification Display -->
-        <div class="brand-popover" id="brandPopover">
-          <div class="popover-content">
-            <div class="popover-badge">⭐ 100% Genuine Authorized Partner</div>
-            <h3 class="popover-title" id="popoverBrandTitle">Havells India</h3>
-            <p class="popover-desc" id="popoverBrandDesc">Authorized dealer for Havells Fans, LED Lighting & Modular Switches at Gupta Electronics, Dhar Road, Manawar.</p>
-            <div class="popover-action">
-              <span class="popover-verified">✓ Verified Suresh Gupta Guarantee</span>
-              <button class="popover-close-btn" id="popoverCloseBtn">Got it!</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Our Services Section (Right After Brands)
-         6 Services: Repair, Replacement, After Sales Guarantee, Concealed Wiring, LED Lighting, Doorstep Care
-         ========================================================================== -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Guaranteed Support</div>
-          <h2 class="section-title">Our <span class="gradient-text">6 Dedicated Services</span></h2>
-          <p class="section-subtitle">
-            Reliable, certified, and friendly electrical services in Manawar and surrounding areas.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <!-- 1. Certified Repair Services (Requested) -->
-          <div class="service-card highlight-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
-              </svg>
-            </div>
-            <div class="service-badge">Primary Service</div>
-            <h3 class="service-title">1. Certified Repair Services</h3>
-            <p class="service-desc">
-              Fast, high-precision repair for ceiling fans, cooler motors, water pumps, faulty switchboards, tripping MCBs, and home appliances using 100% genuine copper windings.
+          <!-- Copy Side -->
+          <div class="ge-about-copy ge-reveal">
+            <div class="ge-kicker">About Gupta Electronics</div>
+            <h2>A Legacy of Trust, Quality & Customer Care</h2>
+            <p>
+              Located on <strong>Dhar Road, Manawar (M.P.)</strong>, Gupta Electronics has been the benchmark for genuine electrical goods, fans, and home appliances for over <strong>25+ years</strong>.
             </p>
-            <ul class="service-points">
-              <li>Fan coil winding & capacitor replacement</li>
-              <li>Short-circuit & fault diagnostics</li>
-              <li>Cooler motor & appliance repair</li>
-            </ul>
-            <a href="tel:9981082392" class="service-action-link">Call for Repair: 9981082392 →</a>
-          </div>
-
-          <!-- 2. Replacement Services (Requested) -->
-          <div class="service-card highlight-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="23 4 23 10 17 10"></polyline>
-                <polyline points="1 20 1 14 7 14"></polyline>
-                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
-              </svg>
-            </div>
-            <div class="service-badge">Hassle-Free</div>
-            <h3 class="service-title">2. Replacement Services</h3>
-            <p class="service-desc">
-              Immediate replacement assistance for eligible in-warranty products including defective LED bulbs, flickering tubelights, faulty modular switches, and manufacturer-damaged components.
+            <p>
+              Founded and personally managed by <strong>Suresh Gupta</strong>, we take pride in serving thousands of homes, shop owners, farmers, and electrical contractors with 100% authentic branded products backed by company warranties and honest guidance.
             </p>
-            <ul class="service-points">
-              <li>Instant over-the-counter bulb replacements</li>
-              <li>Manufacturer warranty claim handling</li>
-              <li>Defective parts swap with zero hassle</li>
-            </ul>
-            <a href="#contact" class="service-action-link">Inquire for Replacement →</a>
+            
+            <!-- 4 Trust Points -->
+            <div class="ge-about-points">
+              <div class="ge-about-point"><span class="ge-check">✓</span><span>100% Genuine Branded Goods (Havells, Polycab, Anchor)</span></div>
+              <div class="ge-about-point"><span class="ge-check">✓</span><span>Wholesale & Honest Retail Pricing</span></div>
+              <div class="ge-about-point"><span class="ge-check">✓</span><span>Official Brand Warranty & Counter Replacement</span></div>
+              <div class="ge-about-point"><span class="ge-check">✓</span><span>Doorstep Electrician & Installation Assistance</span></div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="ge-about-actions">
+              <a class="ge-btn" href="#ge-contact">Contact Us ↗</a>
+              <a class="ge-btn ge-outline" href="tel:9981082392">Call Suresh Gupta: 9981082392</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           5. CONTACT US SECTION (Form on one side, Owner Details on other side, Map below)
+           ========================================================================== -->
+      <section class="ge-section ge-pale" id="ge-contact">
+        <div class="ge-wrap">
+          <div class="ge-heading ge-reveal">
+            <div class="ge-kicker">Get In Touch</div>
+            <h2>Contact Us</h2>
+            <p>Connect directly with proprietor Suresh Gupta for genuine brand advice, wholesale & retail pricing, or electrical queries in Manawar.</p>
           </div>
 
-          <!-- 3. After Sales Guarantee Services (Requested) -->
-          <div class="service-card highlight-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Two-Column Contact Split: Form on One Side, Owner Info on Other Side -->
+          <div class="ge-contact-grid ge-reveal">
+            <!-- Side 1: Interactive Contact Enquiry Form -->
+            <div class="ge-contact-form-card">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+              <div class="ge-form-header">
+                <h3>Send Us an Enquiry</h3>
+                <p>Fill out your details below. You can submit directly via Email or send instantly to Suresh Gupta on WhatsApp.</p>
+              </div>
+
+              <form class="ge-contact-form" id="geContactForm">
+                <div class="ge-form-group">
+                  <label for="ge-name">Your Full Name *</label>
+                  <div class="ge-input-wrap">
+                    <input type="text" id="ge-name" name="name" required placeholder="e.g. Rajesh Sharma" autocomplete="name">
+                  </div>
+                </div>
+
+                <div class="ge-form-row">
+                  <div class="ge-form-group">
+                    <label for="ge-phone">Phone Number *</label>
+                    <div class="ge-input-wrap">
+                      <input type="tel" id="ge-phone" name="phone" required placeholder="e.g. 9876543210" pattern="[0-9]{10}" autocomplete="tel">
+                    </div>
+                  </div>
+
+                  <div class="ge-form-group">
+                    <label for="ge-email">Email Address</label>
+                    <div class="ge-input-wrap">
+                      <input type="email" id="ge-email" name="email" placeholder="e.g. rajesh@gmail.com" autocomplete="email">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ge-form-group">
+                  <label for="ge-message">Requirement / Message *</label>
+                  <div class="ge-input-wrap">
+                    <textarea id="ge-message" name="message" rows="4" required placeholder="Tell us what product you need (e.g. Havells BLDC fan price, Polycab 2.5mm copper wire bundle, Roma modular switchboard)..."></textarea>
+                  </div>
+                </div>
+
+                <!-- Form Action Buttons -->
+                <div class="ge-form-actions">
+                  <button type="submit" class="ge-btn ge-3d-btn" id="formSubmitEmailBtn">
+                    <span>Send via Email ✉</span>
+                  </button>
+                  <button type="button" class="ge-btn ge-whatsapp-submit ge-3d-btn" id="formWhatsAppBtn">
+                    <span>Send on WhatsApp ↗</span>
+                  </button>
+                </div>
+
+                <!-- Form Feedback Status -->
+                <div class="ge-form-status" id="geFormStatus" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <!-- Side 2: Owner & Store Details Card -->
+            <div class="ge-contact-info-card">
+              <div class="ge-card-glare" aria-hidden="true"></div>
+
+              <!-- Owner Identity Header -->
+              <div class="ge-owner-profile">
+                <div class="ge-owner-avatar">
+                  <div class="ge-avatar-initials">SG</div>
+                  <span class="ge-owner-badge" title="Verified Store Proprietor">✓</span>
+                </div>
+                <div class="ge-owner-details">
+                  <span class="ge-owner-role">Store Owner & Proprietor</span>
+                  <h3 class="ge-owner-name">Suresh Gupta</h3>
+                  <span class="ge-owner-exp">25+ Years of Trust in Manawar (M.P.)</span>
+                </div>
+              </div>
+
+              <!-- Owner & Store Contact Info List -->
+              <div class="ge-contact-details-list">
+                <!-- Address -->
+                <div class="ge-contact-item">
+                  <div class="ge-contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="ge-contact-text">
+                    <span class="ge-contact-lbl">Shop Address:</span>
+                    <strong class="ge-contact-val">Dhar Road, Manawar, District Dhar, Madhya Pradesh - 454446</strong>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="ge-contact-item">
+                  <div class="ge-contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="ge-contact-text">
+                    <span class="ge-contact-lbl">Phone Number:</span>
+                    <a href="tel:9981082392" class="ge-contact-link-val"><strong>+91 99810 82392</strong></a>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="ge-contact-item">
+                  <div class="ge-contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="ge-contact-text">
+                    <span class="ge-contact-lbl">Email Address:</span>
+                    <a href="mailto:guptaelectronics@gmail.com" class="ge-contact-link-val"><strong>guptaelectronics@gmail.com</strong></a>
+                  </div>
+                </div>
+
+                <!-- Store Timings -->
+                <div class="ge-contact-item">
+                  <div class="ge-contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div class="ge-contact-text">
+                    <span class="ge-contact-lbl">Store Timings:</span>
+                    <strong class="ge-contact-val">Monday to Sunday: 9:00 AM – 9:30 PM (Open All 7 Days)</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Call Action Button -->
+              <div class="ge-owner-quick-actions">
+                <a href="tel:9981082392" class="ge-btn ge-3d-btn">
+                  <span>Call Suresh Gupta: 9981082392</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Then Below: Full Width Interactive Google Map Section -->
+          <div class="ge-map-full-container ge-reveal">
+            <div class="ge-map-header">
+              <div class="ge-map-title-row">
+                <h3>Store Location & Google Map Directions</h3>
+                <span class="ge-map-pin-pill">📍 Dhar Road, Manawar, District Dhar, M.P. - 454446</span>
+              </div>
+              <p>Gupta Electronics is conveniently located on Dhar Road in Manawar. Use the interactive map below or click for GPS turn-by-turn navigation.</p>
+            </div>
+
+            <!-- Full Width Embedded Google Map -->
+            <div class="ge-map-iframe-box" style="min-height: 480px; height: 480px;">
+              <iframe title="Gupta Electronics location, Dhar Road Manawar"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=Dhar%20Road%2C%20Manawar%2C%20Madhya%20Pradesh%20454446&t=&z=15&ie=UTF8&iwloc=&output=embed">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================================================
+         SITE FOOTER
+         ========================================================================== -->
+    <!-- ==========================================================================
+         SITE FOOTER (Modernized, Attractive & Luxury Design)
+         ========================================================================== -->
+        <!-- ==========================================================================
+         SITE FOOTER (Modernized, Attractive & 3D Luxury Design)
+         ========================================================================== -->
+    <footer class="ge-footer">
+      <div class="ge-wrap">
+        <!-- Top Highlight Ribbon -->
+        <div class="ge-footer-highlight-bar ge-reveal">
+          <div class="ge-fhi-item">
+            <div class="ge-fhi-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                <polyline points="9 12 11 14 15 10"></polyline>
               </svg>
             </div>
-            <div class="service-badge">100% Trust</div>
-            <h3 class="service-title">3. After-Sales Guarantee Services</h3>
-            <p class="service-desc">
-              Our relationship doesn’t end with a sale. Enjoy Suresh Gupta’s personal warranty guarantee, free product inspection, maintenance tips, and genuine brand support for your complete peace of mind.
-            </p>
-            <ul class="service-points">
-              <li>Personal guarantee by Suresh Gupta</li>
-              <li>Free wiring health checkup consultations</li>
-              <li>Priority customer service for local residents</li>
-            </ul>
-            <a href="tel:9981082392" class="service-action-link">Speak with Suresh Gupta →</a>
-          </div>
-
-          <!-- 4. Complete House & Shop Concealed Wiring -->
-          <div class="service-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-            </div>
-            <h3 class="service-title">4. Complete House & Shop Wiring</h3>
-            <p class="service-desc">
-              End-to-end electrical pipe laying, conduit fitting, heavy-duty ISI flame-retardant copper wiring, MCB distribution board setup, and earthing for new homes and shops.
-            </p>
-            <ul class="service-points">
-              <li>FR & FRLSH certified copper wiring</li>
-              <li>Safe distribution board & RCCB load balance</li>
-              <li>Chemical earthing & lightning surge safety</li>
-            </ul>
-            <a href="#contact" class="service-action-link">Get Wiring Quote →</a>
-          </div>
-
-          <!-- 5. LED Lighting & Energy-Saving Solutions -->
-          <div class="service-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="9" y1="18" x2="15" y2="18"></line>
-                <line x1="10" y1="22" x2="14" y2="22"></line>
-                <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
-              </svg>
-            </div>
-            <h3 class="service-title">5. LED Lighting & Energy-Saving</h3>
-            <p class="service-desc">
-              Cut electricity bills by up to 60%! Modern architectural ceiling downlights, decorative strip lights, T5/T8 commercial tubelights, and power-saving consultation.
-            </p>
-            <ul class="service-points">
-              <li>High-lumen, zero-flicker LED tubelights</li>
-              <li>False ceiling spotlight planning</li>
-              <li>Low wattage BLDC fan recommendations</li>
-            </ul>
-            <a href="#tubelights-bulbs" class="service-action-link">Explore Lighting Range →</a>
-          </div>
-
-          <!-- 6. Doorstep Installation & Maintenance -->
-          <div class="service-card">
-            <div class="service-icon-box">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
-            </div>
-            <h3 class="service-title">6. Doorstep Installation & Maintenance</h3>
-            <p class="service-desc">
-              Convenient on-site technician visit in Manawar and nearby areas for new ceiling fan installation, modular board upgrading, inverter setup, and emergency breakdown care.
-            </p>
-            <ul class="service-points">
-              <li>Trained & experienced local electricians</li>
-              <li>Same-day emergency response</li>
-              <li>Transparent fixed-rate service charges</li>
-            </ul>
-            <a href="tel:9981082392" class="service-action-link">Book Technician Now →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         About Us Section (Owner: Suresh Gupta, Short & Simple Story)
-         ========================================================================== -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <!-- Left: About Image -->
-          <div class="about-visual-column">
-            <div class="about-img-frame">
-              <img src="assets/about.jpg" alt="Gupta Electronics Store & Showroom" class="about-main-img" loading="lazy">
-              <div class="about-badge-card">
-                <div class="badge-num">25+</div>
-                <div class="badge-txt">Years of Trust in Manawar</div>
-              </div>
+            <div class="ge-fhi-text">
+              <strong>100% Original Products</strong>
+              <span>Direct Manufacturer Warranty Support</span>
             </div>
           </div>
 
-          <!-- Right: Owner Info & Short Story -->
-          <div class="about-content-column">
-            <div class="section-tag">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
+          <div class="ge-fhi-item">
+            <div class="ge-fhi-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
               </svg>
-              About Us
             </div>
-            <h2 class="section-title">Meet <span class="gradient-text">Suresh Gupta</span></h2>
-            <h4 class="about-owner-sub">Proprietor & Founder, Gupta Electronics (Manawar, M.P.)</h4>
-
-            <!-- Short and Simple Story as requested -->
-            <div class="story-box">
-              <p class="story-paragraph">
-                <strong>Gupta Electronics</strong> ki sthapana <strong>Shri Suresh Gupta</strong> ji dwara Manawar (Dhar) me ek sidhe aur sache lakshya ke saath ki gayi thi — har parivar ko <strong>100% asali (genuine) branded electrical saaman</strong>, sahi daam aur bharosemand after-sales service dena.
-              </p>
-              <p class="story-paragraph">
-                Pichle 25+ varshon se Dhar Road, Manawar me sthit hamari dukaan par aapko <strong>Fans, Modular Switches, Tubelights, LED Bulbs aur Certified Copper Wires</strong> ki sabse badi range milti hai. Suresh Gupta ji ka vishwas hai ki rishta sirf saaman bechne se nahi, balki bechne ke baad di jaane wali seva (service guarantee) se banta hai.
-              </p>
+            <div class="ge-fhi-text">
+              <strong>Instant Replacement</strong>
+              <span>Counter Replacement for Bulbs & Fans</span>
             </div>
+          </div>
 
-            <!-- Highlights -->
-            <div class="about-highlights-grid">
-              <div class="highlight-item">
-                <div class="hl-icon">🏆</div>
-                <div>
-                  <strong>Authorized Brand Partners</strong>
-                  <span>Havells, Bajaj, Crompton, Polycab, Philips, Anchor</span>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <div class="hl-icon">🤝</div>
-                <div>
-                  <strong>Direct Owner Guidance</strong>
-                  <span>Personal advice from Suresh Gupta on wiring & budget</span>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <div class="hl-icon">⚡</div>
-                <div>
-                  <strong>Prompt After-Sales Guarantee</strong>
-                  <span>Quick replacement and doorstep repair support</span>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <div class="hl-icon">📍</div>
-                <div>
-                  <strong>Local Heart of Manawar</strong>
-                  <span>Serving thousands of happy families in Dhar district</span>
-                </div>
-              </div>
+          <div class="ge-fhi-item">
+            <div class="ge-fhi-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
             </div>
+            <div class="ge-fhi-text">
+              <strong>Wholesale & Bulk Quotes</strong>
+              <span>Electrical drawing & site consultations</span>
+            </div>
+          </div>
 
-            <div class="about-cta-row">
-              <a href="tel:9981082392" class="btn btn-primary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-                Call Suresh Gupta: 9981082392
-              </a>
-              <a href="#contact" class="btn btn-secondary">Visit Our Store</a>
+          <div class="ge-fhi-item">
+            <div class="ge-fhi-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="ge-fhi-text">
+              <strong>Since 1998 in Manawar</strong>
+              <span>25+ Years of Proven Customer Trust</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ==========================================================================
-         Contact Us Section
-         Left: Form | Right: Owner Suresh Gupta, Dhar Road Manawar, Phone, Email
-         ========================================================================== -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">Get In Touch</div>
-          <h2 class="section-title">Contact <span class="gradient-text">Gupta Electronics</span></h2>
-          <p class="section-subtitle">
-            Need pricing, bulk wiring estimation, product replacement, or urgent repair? Send us a message or contact Suresh Gupta directly.
-          </p>
-        </div>
-
-        <div class="contact-two-column-layout">
-          <!-- Left Side: Interactive Contact Form (Target of "Contact Us" Hero Button) -->
-          <div class="contact-form-card" id="contactFormCard">
-            <h3 class="form-title">Send Inquiry to Suresh Gupta</h3>
-            <p class="form-sub">Fill this quick form and we will call or WhatsApp you back promptly.</p>
-
-            <form id="contactForm" class="contact-form" novalidate>
-              <div class="form-group">
-                <label for="contactName">Your Full Name <span class="req">*</span></label>
-                <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Ramesh Patel" required>
+        <!-- Main Footer Columns Grid (3-Column Luxury Layout) -->
+        <div class="ge-footer-grid">
+          <!-- Col 1: Brand & Identity -->
+          <div class="ge-footer-col ge-footer-brand-col">
+            <a href="index.html" class="brand-logo footer-logo">
+              <div class="brand-icon">
+                <img src="assets/logo.png" alt="Gupta Electronics Logo" class="brand-logo-img">
               </div>
-
-              <div class="form-group">
-                <label for="contactPhone">Your Phone Number <span class="req">*</span></label>
-                <input type="tel" id="contactPhone" name="phone" class="form-input" placeholder="e.g. 98260XXXXX" required pattern="[0-9]{10}">
+              <div class="brand-info">
+                <span class="brand-name">GUPTA <span>ELECTRONICS</span></span>
+                <span class="brand-tagline">Since 1998 â€¢ Manawar (M.P.)</span>
               </div>
-
-              <div class="form-group">
-                <label for="contactService">Product / Service Needed</label>
-                <select id="contactService" name="service" class="form-select">
-                  <option value="Fans">Ceiling Fans / BLDC Fans (Havells, Bajaj, Crompton)</option>
-                  <option value="Switches">Modular Switches & Boards (Anchor Roma, Goldmedal)</option>
-                  <option value="Tubelights & Bulbs">Tubelights & LED Bulbs (Philips, Bajaj)</option>
-                  <option value="Wires">Wires & Cables (Polycab FR House Wiring)</option>
-                  <option value="Repair Services">Certified Repair Service</option>
-                  <option value="Replacement Services">Replacement Service</option>
-                  <option value="After Sales Guarantee">After Sales Guarantee Inquiry</option>
-                  <option value="General Inquiry">General Store Inquiry</option>
-                </select>
+            </a>
+            <p class="ge-footer-about">
+              Premier retail electrical and electronics showroom on Dhar Road, Manawar (M.P.). Supplying genuine BLDC energy-saving fans, modular switchboards, high-lumen LED lighting, and pure copper house wiring cables with guaranteed durability.
+            </p>
+            <div class="ge-footer-owner-card">
+              <div class="ge-foc-badge">Proprietor</div>
+              <div class="ge-foc-info">
+                <strong>Suresh Gupta</strong>
+                <span>Gupta Electronics, Dhar Road, Manawar</span>
               </div>
+            </div>
+          </div>
 
-              <div class="form-group">
-                <label for="contactMessage">Your Message / Requirement</label>
-                <textarea id="contactMessage" name="message" rows="4" class="form-textarea" placeholder="Tell us what product or service you need in Manawar..."></textarea>
-              </div>
+          <!-- Col 2: Quick Navigation -->
+          <div class="ge-footer-col">
+            <h4 class="ge-footer-title">
+              <span>Quick Navigation</span>
+              <span class="ge-title-accent"></span>
+            </h4>
+            <ul class="ge-footer-links">
+              <li><a href="index.html"><span>&rarr;</span> Home Page</a></li>
+              <li><a href="fans.html"><span>&rarr;</span> FAN Collection</a></li>
+              <li><a href="switches.html"><span>&rarr;</span> Modular Switches & MCBs</a></li>
+              <li><a href="tubelights-bulbs.html"><span>&rarr;</span> Tubelights & Bulbs</a></li>
+              <li><a href="wires.html"><span>&rarr;</span> Pure Copper Wires</a></li>
+              <li><a href="index.html#ge-services"><span>&rarr;</span> Product Guidance</a></li>
+              <li><a href="index.html#ge-about"><span>&rarr;</span> About Our Showroom</a></li>
+              <li><a href="index.html#ge-contact"><span>&rarr;</span> Contact & Location</a></li>
+            </ul>
+          </div>
 
-              <div class="form-btn-group">
-                <button type="submit" class="btn btn-primary btn-block" id="formSubmitBtn">
+          <!-- Col 3: Store Contact & Direct Actions -->
+          <div class="ge-footer-col ge-footer-contact-col">
+            <h4 class="ge-footer-title">
+              <span>Store Contact & Timings</span>
+              <span class="ge-title-accent"></span>
+            </h4>
+            
+            <div class="ge-footer-contact-card">
+              <div class="ge-fcc-item">
+                <div class="ge-fcc-icon">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                  </svg>
-                  Send Message
-                </button>
-                <button type="button" class="btn btn-whatsapp btn-block" id="whatsappDirectBtn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
-                  </svg>
-                  Send via WhatsApp Directly
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <!-- Right Side: Owner Details as requested -->
-          <div class="contact-details-card">
-            <div class="owner-highlight-header">
-              <div class="owner-avatar-lg">SG</div>
-              <div>
-                <span class="owner-badge-tag">Shop Proprietor</span>
-                <h3 class="owner-big-name">Suresh Gupta</h3>
-                <p class="owner-store-sub">Gupta Electronics • Manawar (M.P.)</p>
-              </div>
-            </div>
-
-            <div class="details-list">
-              <!-- Address (Requested) -->
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <div class="detail-content">
-                  <span class="detail-label">Store Address:</span>
-                  <p class="detail-value">
-                    <strong>Dhar Road Manawar (M.P) 454446</strong>
-                  </p>
-                  <span class="detail-hint">Easily accessible on Main Dhar Road in Manawar</span>
+                <div>
+                  <strong>Shop Address:</strong>
+                  <span>Dhar Road, Manawar, Dist. Dhar, Madhya Pradesh - 454446</span>
                 </div>
               </div>
 
-              <!-- Phone Number (Requested) -->
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <a href="tel:9981082392" class="ge-fcc-item ge-fcc-action">
+                <div class="ge-fcc-icon call-icon">
+                  <span class="live-dot"></span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                 </div>
-                <div class="detail-content">
-                  <span class="detail-label">Phone Number:</span>
-                  <p class="detail-value">
-                    <a href="tel:9981082392" class="phone-link"><strong>9981082392</strong></a>
-                  </p>
-                  <span class="detail-hint">Direct line to Suresh Gupta (Available 9 AM - 9 PM)</span>
+                <div>
+                  <span class="ge-fcc-sub">Call Suresh Gupta Directly</span>
+                  <strong class="ge-fcc-num">+91 99810 82392</strong>
                 </div>
-              </div>
+              </a>
 
-              <!-- Email Address (Requested) -->
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20products%20at%20Gupta%20Electronics." target="_blank" rel="noopener" class="ge-fcc-item ge-fcc-action wa-action">
+                <div class="ge-fcc-icon wa-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="ge-fcc-sub">WhatsApp Quotation & Support</span>
+                  <strong class="ge-fcc-num">+91 99810 82392</strong>
+                </div>
+              </a>
+
+              <div class="ge-fcc-item">
+                <div class="ge-fcc-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <div class="detail-content">
-                  <span class="detail-label">Email Address:</span>
-                  <p class="detail-value">
-                    <a href="mailto:shreya989gupta@gmail.com" class="email-link"><strong>shreya989gupta@gmail.com</strong></a>
-                  </p>
-                  <span class="detail-hint">For inquiries, invoices, and quotation requests</span>
+                <div>
+                  <strong>Email:</strong>
+                  <a href="mailto:guptaelectronics@gmail.com" class="ge-mail-link">guptaelectronics@gmail.com</a>
                 </div>
               </div>
 
-              <!-- Business Hours -->
-              <div class="detail-item">
-                <div class="detail-icon">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div class="detail-content">
-                  <span class="detail-label">Store Hours:</span>
-                  <p class="detail-value">Monday to Sunday: <strong>9:00 AM – 9:00 PM</strong></p>
-                  <span class="detail-hint">Open all 7 days for customer service</span>
-                </div>
+              <div class="ge-fcc-timing-pill">
+                <span class="pill-dot"></span>
+                <span>Open 7 Days: 9:00 AM - 9:30 PM</span>
               </div>
-            </div>
-
-            <!-- Direct Call & WhatsApp Action Banner -->
-            <div class="quick-contact-box">
-              <a href="tel:9981082392" class="btn btn-call-large">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                </svg>
-                Call Suresh Gupta: 9981082392
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <!-- ==========================================================================
-       Site Footer
-       (Exact requirements: Suresh Gupta, Dhar Road Manawar, 9981082392,
-        Menu quick links: Home Page, Fan, Switches, Tubelights&bulbs, 2 lines for Gupta Electronics)
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <!-- Column 1: Brand & 2 Lines -->
-      <div class="footer-col footer-brand-col">
-        <a href="#home" class="brand-logo footer-logo">
-          <div class="brand-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-            </svg>
+      <!-- Bottom Bar -->
+      <div class="ge-footer-bottom">
+        <div class="ge-wrap ge-footer-bottom-flex">
+          <div class="ge-fb-left">
+            <p>&copy; 2026 Gupta Electronics, Dhar Road, Manawar (M.P.) 454446. All Rights Reserved.</p>
           </div>
-          <div class="brand-info">
-            <span class="brand-name">GUPTA <span>ELECTRONICS</span></span>
-            <span class="brand-tagline">Since 1998 • Manawar (M.P.)</span>
+          <div class="ge-fb-right">
+            <span class="ge-fb-owner">Proprietor: <strong>Suresh Gupta</strong></span>
+            <span class="ge-fb-sep">|</span>
+            <a href="tel:9981082392" class="ge-fb-call">Direct: 9981082392</a>
+            <span class="ge-fb-sep">|</span>
+            <a href="https://wa.me/919981082392" target="_blank" rel="noopener" class="ge-fb-wa">WhatsApp</a>
           </div>
-        </a>
-
-        <!-- 2 Lines for Gupta Electronics as requested -->
-        <p class="footer-two-lines">
-          Gupta Electronics is Manawar's trusted destination for 100% genuine electricals, energy-saving fans, luxury modular switches, and certified fire-resistant wiring. Dedicated to powering your homes and businesses safely with guaranteed after-sales service since 1998.
-        </p>
-
-        <div class="footer-owner-tag">
-          <span>Owner:</span> <strong>Suresh Gupta</strong>
         </div>
       </div>
+    </footer>
+  </div>
 
-      <!-- Column 2: Quick Links (Menu items strictly: Home Page, Fan, Switches, Tubelights&bulbs) -->
-      <div class="footer-col footer-links-col">
-        <h4 class="footer-title">Menu (Quick Links)</h4>
-        <ul class="footer-menu-list">
-          <li><a href="#home">🏠 Home Page</a></li>
-          <li><a href="#fans">🌀 Fan</a></li>
-          <li><a href="#switches">🔘 Switches</a></li>
-          <li><a href="#tubelights-bulbs">💡 Tubelights&bulbs</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Contact Info (Suresh Gupta, Dhar Road Manawar, 9981082392) -->
-      <div class="footer-col footer-contact-col">
-        <h4 class="footer-title">Store & Owner Details</h4>
-        <ul class="footer-contact-list">
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-            <div>
-              <span class="fc-label">Owner:</span>
-              <strong>Suresh Gupta</strong>
-            </div>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <div>
-              <span class="fc-label">Address:</span>
-              <strong>Dhar Road Manawar (M.P) 454446</strong>
-            </div>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            <div>
-              <span class="fc-label">Phone:</span>
-              <a href="tel:9981082392" class="fc-link"><strong>9981082392</strong></a>
-            </div>
-          </li>
-          <li>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <div>
-              <span class="fc-label">Email:</span>
-              <a href="mailto:shreya989gupta@gmail.com" class="fc-link"><strong>shreya989gupta@gmail.com</strong></a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Bottom Copyright Bar -->
-    <div class="footer-bottom">
-      <div class="container footer-bottom-flex">
-        <p>© 2026 Gupta Electronics, Dhar Road Manawar (M.P) 454446. All Rights Reserved.</p>
-        <p>Owner: <strong>Suresh Gupta</strong> | Phone: <strong>9981082392</strong></p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating Quick WhatsApp & Call Action Buttons -->
-  <div class="floating-contact-actions">
-    <a href="https://wa.me/919981082392?text=Namaste%20Suresh%20ji,%20I%20saw%20your%20Gupta%20Electronics%20website%20and%20want%20to%20inquire." target="_blank" rel="noopener" class="float-btn float-whatsapp" title="Chat with Suresh Gupta on WhatsApp">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+  <!-- Floating Action Buttons -->
+  <div class="ge-floating-actions">
+    <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20visiting%20Gupta%20Electronics%20website%20and%20want%20to%20inquire." target="_blank" rel="noopener" class="ge-float-btn ge-float-wa" title="WhatsApp Suresh Gupta">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
       </svg>
       <span>WhatsApp</span>
     </a>
-    <a href="tel:9981082392" class="float-btn float-call" title="Call Suresh Gupta Directly">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <a href="tel:9981082392" class="ge-float-btn ge-float-call" title="Call Suresh Gupta Directly">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
       </svg>
       <span>Call</span>
     </a>
   </div>
 
-  <!-- Toast Container -->
-  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
-
-  <!-- Core JavaScript -->
+  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>
