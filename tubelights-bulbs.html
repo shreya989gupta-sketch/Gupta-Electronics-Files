@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en" data-theme="royal-gold">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,48 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
+        <!-- Luxury Theme Switcher Widget -->
+        <div class="theme-switcher-wrap" id="themeSwitcherWrap">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Luxury Theme" title="Switch Color Theme" type="button">
+            <span class="theme-swatch-preview gold-swatch" id="themeSwatchPreview"></span>
+            <span class="theme-name-label" id="themeCurrentLabel">Royal Gold</span>
+            <svg class="theme-toggle-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-dropdown-header">Select Premium Aesthetic</div>
+            <button class="theme-option is-active" data-set-theme="royal-gold" type="button">
+              <span class="theme-swatch gold-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Royal Obsidian Gold</strong>
+                <small>Imperial 24K Luxury (Default)</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="sapphire-luxe" type="button">
+              <span class="theme-swatch sapphire-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Midnight Sapphire</strong>
+                <small>Deep Navy & Electric Tech</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="emerald-prestige" type="button">
+              <span class="theme-swatch emerald-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Emerald Prestige</strong>
+                <small>Royal Forest & Champagne</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="pearl-luxury" type="button">
+              <span class="theme-swatch pearl-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Pearl & Champagne Light</strong>
+                <small>Crisp Alabaster Daylight Luxe</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
         <!-- Direct Call to Suresh Gupta -->
         <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta Directly">
           <span class="live-pulse"></span>
@@ -66,78 +108,11 @@
 
   <div id="gupta-electronics-site">
     <main>
-      <!-- ==========================================================================
-           PAGE HERO BANNER
-           ========================================================================== -->
-      <section class="ge-page-hero">
-        <div class="ge-wrap">
-          <div class="ge-page-hero-content ge-reveal">
-            <div class="ge-breadcrumb">
-              <a href="index.html">Home</a> <span>/</span> <strong>Tubelights & bulbs</strong>
-            </div>
-            <div class="ge-hero-badge">
-              <span class="ge-pulse-dot"></span>
-              <span>⭐ 1-2 Years Instant Counter Replacement • EyeComfort Certified</span>
-            </div>
-            <h1>Energy-Saving <span>Tubelights & Bulbs</span></h1>
-            <p>
-              High-efficiency 24W LED Battens, 9W/12W Inverter Emergency Backup Bulbs that stay ON during power cuts, Warm Edison decorative filament bulbs, and slim concealed false ceiling downlights in Manawar.
-            </p>
-
-            <!-- Filter Buttons -->
-            <div class="ge-filter-row" id="lightFilters">
-              <button type="button" class="ge-filter-btn active" data-filter="all">All Lights</button>
-              <button type="button" class="ge-filter-btn" data-filter="tubelights">LED Battens</button>
-              <button type="button" class="ge-filter-btn" data-filter="inverter">Inverter Emergency Bulbs</button>
-              <button type="button" class="ge-filter-btn" data-filter="regular">Regular & High Wattage</button>
-              <button type="button" class="ge-filter-btn" data-filter="panels">False Ceiling Panels</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ==========================================================================
-           INTERACTIVE ROOM LIGHTING AMBIENCE SIMULATOR WIDGET
+           LIGHTS CATALOG GRID
            ========================================================================== -->
-      <section class="ge-section" style="padding: 40px 0 20px;">
-        <div class="ge-wrap">
-          <div class="ge-light-sim ge-reveal">
-            <div style="text-align: center; max-width: 620px; margin: 0 auto 10px;">
-              <div class="ge-kicker">Interactive Live Lighting Demo</div>
-              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 6px;">
-                Virtual Room Lighting Ambience Simulator
-              </h3>
-              <p style="color: var(--muted); font-size: 0.9rem;">
-                Click any lighting tone below to experience how Philips, Syska & Crompton LEDs transform your room atmosphere!
-              </p>
-            </div>
-
-            <div class="ge-light-mode-buttons" style="justify-content: center;">
-              <button type="button" class="ge-speed-btn active" data-light-mode="day">Cool Daylight (6500K)</button>
-              <button type="button" class="ge-speed-btn" data-light-mode="warm">Natural White (4000K)</button>
-              <button type="button" class="ge-speed-btn" data-light-mode="cozy">Cozy Golden Amber (3000K)</button>
-              <button type="button" class="ge-speed-btn" data-light-mode="emergency">🔋 Inverter Emergency Mode</button>
-            </div>
-
-            <!-- Virtual Room Display Box -->
-            <div class="ge-light-room-box mode-day" id="lightRoomBox">
-              <div style="text-align: center; color: #fff; z-index: 2; padding: 20px;">
-                <h4 id="lightModeTitle" style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 6px; text-shadow: 0 0 20px rgba(0,0,0,0.8);">
-                  Cool Daylight (6500K)
-                </h4>
-                <p id="lightModeDesc" style="font-size: 0.95rem; max-width: 500px; margin: 0 auto; text-shadow: 0 0 15px rgba(0,0,0,0.8);">
-                  High-focus, crisp bright white light. Ideal for kitchens, study rooms, offices & grocery counters.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================================
-           LIGHTS CATALOG GRID (Real Images, Brand Tags, Specs & Interactive Badges)
-           ========================================================================== -->
-      <section class="ge-section ge-pale">
+      <section class="ge-section ge-pale" style="padding-top: 100px;">
         <div class="ge-wrap">
           <div class="ge-heading ge-reveal" style="margin-bottom: 30px;">
             <div class="ge-kicker">Branded LED Lighting</div>
@@ -147,272 +122,332 @@
 
           <div class="ge-product-grid" id="lightsCatalogGrid">
 
-            <!-- Item 1: Philips 24W EyeComfort LED Batten -->
-            <div class="ge-product-card ge-reveal" data-category="tubelights">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">LED Batten</span>
-                <img src="assets/light_item_1.jpg" alt="Philips 24W Batten" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>2400 Lumens</span></div>
+            <!-- Light 1: Goldmedal Office Linear Batten LED Tubelight (User Tubelight 1) -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">4ft Office Batten</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/tubelights/gm_0908_led_tube_light_product_image_2.webp" alt="Goldmedal High-Lumen Office LED Batten Tubelight" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">24W &bull; 2600 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips LED</span>
+                <span class="ge-brand-tag">Goldmedal LED</span>
+                <h3 class="ge-product-title">Goldmedal 24W Slim Linear Architectural Office LED Batten</h3>
+                <p class="ge-product-spec">Heavy Aluminum Heat-Sink &bull; 2600 Lumens Anti-Glare Frosted Diffuser &bull; Surge Protected 4kV &bull; Ideal for Modern Offices &amp; Showrooms</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">2 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Goldmedal%20LED%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light 2: Architectural Hanging Brass LED Pendant Tube (User Tubelight 2) -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="decorative tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Hanging Brass Tube</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/tubelights/images (1).jpg" alt="Luxury Architectural Brass Hanging LED Pendant Tube" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">Warm Gold 3000K</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Architectural Luxury Series</span>
+                <h3 class="ge-product-title">Luxury Designer Fluted Brass Architectural Hanging LED Tube</h3>
+                <p class="ge-product-spec">Handcrafted Pure Brass Endcaps &bull; Dual Ceiling Drop Rods &bull; 3000K Warm Golden Ambient Glow &bull; Statement Piece for Kitchen Islands &amp; Dining</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">Designer Series</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Brass%20Hanging%20Tube." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light 3: Cozy Living Room Warm Ambient LED Batten (User Tubelight 3) -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights decorative">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Warm Wall Batten</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/tubelights/images.jpg" alt="Warm White Designer Living Room Wall Batten" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">20W &bull; 2100 Lumens</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Havells Lighting</span>
+                <h3 class="ge-product-title">Havells Glam 20W Warm White Architectural Wall LED Batten</h3>
+                <p class="ge-product-spec">Soft Cozy Warm Ambient Wall Glow &bull; Energy Saving A++ Rating &bull; Surge Protected 4kV Driver &bull; Ideal for Living Room Wall Backdrop</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">2 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Warm%20LED%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light 4: Philips 24W EyeComfort High-Lumen Batten -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Best Seller Batten</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_1.jpg" alt="Philips 24W EyeComfort LED Batten" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">2400 Lumens</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Philips Lighting</span>
                 <h3 class="ge-product-title">Philips 24W EyeComfort High-Lumen Batten</h3>
-                <p class="ge-product-spec">2400 Lumens • No Screen Glare or Eye Strain • 4kV Surge Protection • Cool Daylight 6500K • 4 Feet Slim Extruded Aluminum Housing</p>
+                <p class="ge-product-spec">Zero Glare &bull; No Visible Flicker &bull; 2400 Lumens Cool Daylight &bull; Slim Polycarbonate Body with Wall Clamps &bull; 2-Year Warranty</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">2 Years Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%20Tubelight." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">2 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%2024W%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 2: Syska 9W Inverter Emergency LED Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="inverter">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Inverter Bulb</span>
-                <img src="assets/light_item_2.jpg" alt="Syska Inverter Emergency Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>4 Hrs Backup</span></div>
+            <!-- Light 5: Syska 9W Inverter Emergency Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="inverter bulbs">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Inverter Backup</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_2.jpg" alt="Syska 9W Inverter Emergency Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">4 Hours Backup</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Syska</span>
+                <span class="ge-brand-tag">Syska LED</span>
                 <h3 class="ge-product-title">Syska 9W Inverter Emergency Rechargeable Bulb</h3>
-                <p class="ge-product-spec">Automatically Turns ON When Power Fails • 4 Hours Inbuilt Lithium Battery Backup • B22 Standard Pin Socket • Auto Charging</p>
+                <p class="ge-product-spec">Automatic Instant On during Power Cuts &bull; 4 Hours Backup with In-Built 2600mAh Li-ion Battery &bull; B22 Base &bull; Overcharge Protection</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Syska%20Emergency%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">1 Year Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Syska%20Inverter%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 3: Halonix Prime 12W Inverter Emergency Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="inverter">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">High Power Inverter</span>
-                <img src="assets/light_item_3.jpg" alt="Halonix Prime 12W Inverter Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>1200 Lumens</span></div>
+            <!-- Light 6: Halonix Prime 12W Turbo Inverter Emergency Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="inverter bulbs">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">12W High Backup</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_3.jpg" alt="Halonix Prime 12W Turbo Inverter Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">1200 Lumens</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Halonix Prime</span>
                 <h3 class="ge-product-title">Halonix Prime 12W Turbo Inverter Emergency Bulb</h3>
-                <p class="ge-product-spec">Higher 12W Brightness Output • 2600mAh Heavy Battery for 4.5 Hours Backup • Overcharge & Deep Discharge Cutoff</p>
+                <p class="ge-product-spec">Extra Bright 12W Power &bull; Automatic Charging &bull; 4-5 Hours Continuous Emergency Lighting &bull; High Surge Resistance 4kV</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Halonix%20Inverter%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">1 Year Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Halonix%2012W%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 4: Crompton 9W High-Lumen B22 LED Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Energy Saver</span>
-                <img src="assets/light_item_4.jpg" alt="Crompton 9W LED Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>900 Lumens</span></div>
+            <!-- Light 7: Crompton 9W Ray B22 Energy Efficient Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="bulbs">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Everyday Standard</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_4.jpg" alt="Crompton 9W Ray B22 Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">900 Lumens</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Crompton</span>
                 <h3 class="ge-product-title">Crompton 9W Ray B22 Energy Efficient Bulb</h3>
-                <p class="ge-product-spec">900 Lumens • 85% Electricity Saving vs GLS Bulbs • 2.5kV Inbuilt Voltage Surge Protection • Wide 240° Beam Angle</p>
+                <p class="ge-product-spec">900 Lumens Cool Daylight &bull; 85% Electricity Saving vs Tungsten &bull; High Efficacy 100 lm/W &bull; Wide 220&deg; Beam Angle</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Crompton%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">1 Year Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Crompton%209W%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 5: Havells Glam 20W LED Slim Batten -->
-            <div class="ge-product-card ge-reveal" data-category="tubelights">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">LED Batten</span>
-                <img src="assets/light_item_5.jpg" alt="Havells Glam Batten" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>2000 Lumens</span></div>
+            <!-- Light 8: Havells Glam 20W LED Slim Lightweight Batten -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Slim Decorative</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_5.jpg" alt="Havells Glam 20W LED Slim Batten" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">2000 Lumens</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Havells</span>
                 <h3 class="ge-product-title">Havells Glam 20W LED Slim Lightweight Batten</h3>
-                <p class="ge-product-spec">High Voltage Cutoff Protection • Rust-Free Polycarbonate Housing • Instant 100% Brightness • Includes Wall Mounting Brackets</p>
+                <p class="ge-product-spec">2000 Lumens &bull; Insect Proof &amp; Dust Sealed Extrusion &bull; Elegant Beveled Profile &bull; 50,000 Switching Cycles Tested</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Havells%20Tubelights." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Havells%20Glam%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 6: Philips 14W Stellar High-Brightness Daylight Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">High Wattage</span>
-                <img src="assets/light_item_6.jpg" alt="Philips 14W Stellar Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>1400 Lumens</span></div>
+            <!-- Light 9: Philips 14W Stellar High-Brightness Daylight Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="bulbs">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Extra Bright</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_6.jpg" alt="Philips 14W Stellar High Brightness Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">1400 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips Stellar</span>
+                <span class="ge-brand-tag">Philips Lighting</span>
                 <h3 class="ge-product-title">Philips 14W Stellar High-Brightness Daylight Bulb</h3>
-                <p class="ge-product-spec">1400 Lumens Output • Ideal for Large Living Halls, Kitchens & Retail Shops • High CRI > 80 for True Color Perception</p>
+                <p class="ge-product-spec">1400 Lumens Super Bright &bull; Ideal for Large Living Halls, Kitchens &amp; Study Rooms &bull; No Buzzing &bull; CRI &gt; 80 True Colors</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%2014W%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">2 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%2014W%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 7: Vintage Amber Filament Edison LED Bulb (E27 / B22) -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Vintage Edison</span>
-                <img src="assets/light_item_7.jpg" alt="Vintage Edison Filament Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>Warm 2200K</span></div>
+            <!-- Light 10: 4W & 8W Vintage Amber Filament Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="decorative">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Edison Filament</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_7.jpg" alt="Vintage Amber Filament Decorative Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">Amber 2200K</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips / Crompton</span>
-                <h3 class="ge-product-title">4W & 8W Vintage Amber Filament Decorative Bulb</h3>
-                <p class="ge-product-spec">Cozy Golden Amber Glow • Spiral Filament Art Design • Perfect for Dining Chandeliers, Cafes & Bedside Hanging Pendants</p>
+                <span class="ge-brand-tag">Vintage Deco Series</span>
+                <h3 class="ge-product-title">4W &amp; 8W Vintage Amber Filament Decorative Bulb</h3>
+                <p class="ge-product-spec">Retro Exposed Filament Design &bull; Golden Tint Glass &bull; 2200K Warm Ambient Illumination &bull; Perfect for Hanging Pendants &amp; Cafe Decor</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">1 Year Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Vintage%20Edison%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Vintage%20Filament%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 8: Smart RGB Wi-Fi 10W Multi-Color Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Smart IoT RGB</span>
-                <img src="assets/light_item_8.jpg" alt="Smart RGB Wi-Fi Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>16M Colors</span></div>
+            <!-- Light 11: 10W Smart Wi-Fi 16-Million Colors RGB Bulb -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="decorative bulbs">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">RGB Smart Wi-Fi</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_8.jpg" alt="10W Smart Wi-Fi RGB Bulb" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">16M Colors</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Syska / Wipro</span>
+                <span class="ge-brand-tag">Syska Smart / Wipro</span>
                 <h3 class="ge-product-title">10W Smart Wi-Fi 16-Million Colors RGB Bulb</h3>
-                <p class="ge-product-spec">Mobile App & Voice Control (Alexa / Google Assistant) • Music Sync Mode • Dimmable from 1% to 100% Brightness</p>
+                <p class="ge-product-spec">Works with Alexa &amp; Google Home &bull; Music Sync Mode &bull; Preset Mood Lighting &bull; Direct Wi-Fi Connection (No Hub Required)</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Smart%20RGB%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20RGB%20Smart%20Bulb." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 9: 6W Slim Round Concealed False Ceiling Downlight Panel -->
-            <div class="ge-product-card ge-reveal" data-category="panels">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Ceiling Panel</span>
-                <img src="assets/light_item_9.jpg" alt="Concealed Downlight Panel" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>Slim Flush</span></div>
+            <!-- Light 12: 6W Slim Round Concealed False Ceiling Downlight -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="panels">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">False Ceiling Spot</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_9.jpg" alt="6W Slim Round False Ceiling Downlight" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">6W &bull; 600 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Havells / Crompton</span>
+                <span class="ge-brand-tag">Goldmedal / Philips</span>
                 <h3 class="ge-product-title">6W Slim Round Concealed False Ceiling Downlight</h3>
-                <p class="ge-product-spec">Ultra-Slim Profile for Gypsum & POP False Ceilings • Inbuilt Heavy Driver with Surge Protection • Available in White, Warm & Natural</p>
+                <p class="ge-product-spec">Ultra-Slim 15mm Depth &bull; Spring Retention Clips &bull; Die-Cast Aluminum Body for Maximum Heat Dissipation &bull; High Efficacy Driver</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20False%20Ceiling%20Panels." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%206W%20Ceiling%20Downlights." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 10: 12W Square Warm White False Ceiling Panel -->
-            <div class="ge-product-card ge-reveal" data-category="panels">
-              <div class="ge-product-visual">
+            <!-- Light 13: 12W Square Warm White False Ceiling Panel -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="panels">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
                 <span class="ge-prod-chip">Square Panel</span>
-                <img src="assets/light_item_10.jpg" alt="Square Ceiling Panel" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>1200 Lumens</span></div>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_10.jpg" alt="12W Square False Ceiling LED Panel" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">1200 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips / Havells</span>
+                <span class="ge-brand-tag">Havells / Goldmedal</span>
                 <h3 class="ge-product-title">12W Square Warm White False Ceiling LED Panel</h3>
-                <p class="ge-product-spec">Modern Square Bezel • High Luminous Efficacy > 100 lm/W • Anti-Glare Frosted Diffuser for Eye Comfort</p>
+                <p class="ge-product-spec">Even Light Dispersion with Edge-Lit Guide Plate &bull; Soft Non-Glare 3000K Warm White &bull; Ideal for Drawing Rooms &amp; Bed Backdrops</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%2012W%20Panels." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%2012W%20Square%20Panels." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 11: Philips 28W High Lumen T5 LED Batten Tube -->
-            <div class="ge-product-card ge-reveal" data-category="tubelights">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Super Bright Batten</span>
-                <img src="assets/light_item_11.jpg" alt="Philips 28W High Lumen LED Batten" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>2800 Lumens</span></div>
+            <!-- Light 14: Philips 28W Ultra-Bright T5 LED Batten -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">T5 Ultra Bright</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_11.jpg" alt="Philips 28W Ultra Bright T5 Batten" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">2800 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips</span>
-                <h3 class="ge-product-title">Philips 28W Ultra-Bright T5 LED Batten</h3>
-                <p class="ge-product-spec">Maximum Lumens for Large Halls & Showrooms • Non-Yellowing Extruded Polycarbonate Body • Surge Protection 4kV</p>
+                <span class="ge-brand-tag">Philips Lighting</span>
+                <h3 class="ge-product-title">Philips 28W Ultra-Bright T5 Heavy LED Batten</h3>
+                <p class="ge-product-spec">2800 Lumens High Output &bull; Replaces 2 Regular Tube Lights &bull; Rigid Aluminum Backbone &bull; Ideal for Commercial Halls &amp; Large Rooms</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%2028W%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%2028W%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 12: Havells Glaze 15W Inverter Rechargeable Emergency LED Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="inverter">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Inverter Bulb</span>
-                <img src="assets/light_item_12.jpg" alt="Havells 15W Inverter Emergency Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>Automatic Backup</span></div>
+            <!-- Light 15: Bajaj 36W Heavy Commercial Batten -->
+            <div class="ge-product-card ge-reveal ge-interactive-light-card is-light-off" data-category="tubelights">
+              <div class="ge-product-visual" title="Click to Turn Light ON / OFF">
+                <span class="ge-prod-chip">Commercial 36W</span>
+                <div class="ge-light-click-hint"><span class="ge-light-hint-icon">&#127761;</span><span class="ge-light-hint-text">Light OFF &bull; Click to ON</span></div>
+                <img src="assets/light_item_14.jpg" alt="Bajaj 36W Commercial Heavy LED Batten" class="ge-product-img" loading="lazy">
+              </div>
+              <div class="ge-card-light-controls">
+                <button type="button" class="ge-light-toggle-btn" aria-label="Toggle Light"><span class="ge-light-bulb-icon">&#128161;</span><span class="ge-light-btn-text">Turn ON Light</span></button>
+                <span class="ge-light-lumens-tag">3600 Lumens</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Havells</span>
-                <h3 class="ge-product-title">Havells 15W High-Power Inverter Emergency LED Bulb</h3>
-                <p class="ge-product-spec">Heavy 2600mAh Lithium-Ion Battery • Up to 4.5 Hours Continuous Light in Power Cuts • Auto Overcharge Protection</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Replacement</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Havells%2015W%20Inverter%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 13: Crompton 14W High Bright B22 Base Cool Daylight LED Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Everyday LED</span>
-                <img src="assets/light_item_13.jpg" alt="Crompton 14W LED Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>1400 Lumens</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Crompton</span>
-                <h3 class="ge-product-title">Crompton 14W B22 High-Lumen Cool Daylight Bulb</h3>
-                <p class="ge-product-spec">Wide 240-Degree Beam Spread • High Color Rendering Index (CRI > 85) • Robust Driver with 3.5kV Surge Capacity</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">1 Year Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Crompton%2014W%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 14: Bajaj 36W Commercial Slim Surface Batten Light -->
-            <div class="ge-product-card ge-reveal" data-category="tubelights">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Commercial Batten</span>
-                <img src="assets/light_item_14.jpg" alt="Bajaj 36W Commercial LED Batten" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>3600 Lumens</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Bajaj</span>
+                <span class="ge-brand-tag">Bajaj Electricals</span>
                 <h3 class="ge-product-title">Bajaj 36W Commercial Heavy-Duty LED Batten</h3>
-                <p class="ge-product-spec">High Ceiling Light Throw for Godowns, Clinics & Classrooms • Extruded Aluminum Heat Sink Base • Flicker-Free Constant Driver</p>
+                <p class="ge-product-spec">3600 Lumens Industrial Strength Output &bull; Extruded Aluminum Heat Sink &bull; Withstands Voltage Spikes up to 380V &bull; 50,000 hrs Life</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Bajaj%2036W%20Battens." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 15: Philips Hue Smart WiFi Multi-Color RGBW 9W Bulb -->
-            <div class="ge-product-card ge-reveal" data-category="regular">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Smart RGBW</span>
-                <img src="assets/light_item_15.jpg" alt="Philips Smart RGBW Bulb" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-light-badge"><span class="light-halo"></span><span>16M Colors</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Philips Smart</span>
-                <h3 class="ge-product-title">Philips Smart WiFi Multi-Color RGBW LED Bulb</h3>
-                <p class="ge-product-spec">16 Million Colors + Tunable Warm to Cool White • Alexa & Google Home Voice Control • Music Sync via Smartphone App</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Philips%20Smart%20RGB%20Bulbs." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Bajaj%2036W%20Batten." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>

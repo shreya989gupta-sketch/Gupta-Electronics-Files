@@ -13,7 +13,131 @@
 (function () {
   'use strict';
 
+  /* ==========================================================================
+     0. LUXURY THEME ENGINE (Royal Gold, Sapphire, Emerald, Pearl)
+     ========================================================================== */
+  const THEMES = [
+    { id: 'royal-gold', name: 'Royal Gold', fullName: 'Royal Obsidian Gold', desc: 'Imperial 24K Luxury (Default)', swatch: 'gold-swatch' },
+    { id: 'sapphire-luxe', name: 'Sapphire', fullName: 'Midnight Sapphire', desc: 'Deep Navy & Electric Tech', swatch: 'sapphire-swatch' },
+    { id: 'emerald-prestige', name: 'Emerald', fullName: 'Emerald Prestige', desc: 'Royal Forest & Champagne', swatch: 'emerald-swatch' },
+    { id: 'pearl-luxury', name: 'Pearl', fullName: 'Pearl & Champagne Light', desc: 'Crisp Alabaster Daylight Luxe', swatch: 'pearl-swatch' }
+  ];
+
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem('ge_luxury_theme') || 'royal-gold';
+    } catch (e) {
+      return 'royal-gold';
+    }
+  }
+
+  function applyTheme(themeId) {
+    document.documentElement.setAttribute('data-theme', themeId);
+    try {
+      localStorage.setItem('ge_luxury_theme', themeId);
+    } catch (e) {}
+
+    // Update active state in switcher if present
+    const currentTheme = THEMES.find(t => t.id === themeId) || THEMES[0];
+    const previewSwatch = document.getElementById('themeSwatchPreview');
+    const label = document.getElementById('themeCurrentLabel');
+
+    if (previewSwatch) {
+      previewSwatch.className = 'theme-swatch-preview ' + currentTheme.swatch;
+    }
+    if (label) {
+      label.textContent = currentTheme.name;
+    }
+
+    document.querySelectorAll('.theme-option').forEach(opt => {
+      if (opt.getAttribute('data-set-theme') === themeId) {
+        opt.classList.add('is-active');
+      } else {
+        opt.classList.remove('is-active');
+      }
+    });
+  }
+
+  // Immediately apply stored theme to eliminate flash
+  const initialTheme = getStoredTheme();
+  applyTheme(initialTheme);
+
   document.addEventListener('DOMContentLoaded', () => {
+    /* ==========================================================================
+       Theme Switcher UI Setup & Interaction
+       ========================================================================== */
+    const headerActions = document.querySelector('.header-actions');
+    let switcherWrap = document.getElementById('themeSwitcherWrap');
+
+    if (headerActions && !switcherWrap) {
+      switcherWrap = document.createElement('div');
+      switcherWrap.className = 'theme-switcher-wrap';
+      switcherWrap.id = 'themeSwitcherWrap';
+
+      const curThemeObj = THEMES.find(t => t.id === getStoredTheme()) || THEMES[0];
+
+      switcherWrap.innerHTML = `
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Luxury Theme" title="Switch Color Theme" type="button">
+          <span class="theme-swatch-preview ${curThemeObj.swatch}" id="themeSwatchPreview"></span>
+          <span class="theme-name-label" id="themeCurrentLabel">${curThemeObj.name}</span>
+          <svg class="theme-toggle-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <div class="theme-dropdown" id="themeDropdown">
+          <div class="theme-dropdown-header">Select Premium Aesthetic</div>
+          ${THEMES.map(t => `
+            <button class="theme-option ${t.id === curThemeObj.id ? 'is-active' : ''}" data-set-theme="${t.id}" type="button">
+              <span class="theme-swatch ${t.swatch}"></span>
+              <div class="theme-opt-text">
+                <strong>${t.fullName}</strong>
+                <small>${t.desc}</small>
+              </div>
+            </button>
+          `).join('')}
+        </div>
+      `;
+
+      const menuToggleBtn = document.getElementById('menuToggleBtn');
+      if (menuToggleBtn) {
+        headerActions.insertBefore(switcherWrap, menuToggleBtn);
+      } else {
+        headerActions.appendChild(switcherWrap);
+      }
+    }
+
+    if (switcherWrap) {
+      const toggleBtn = switcherWrap.querySelector('#themeToggleBtn') || document.getElementById('themeToggleBtn');
+      const dropdown = switcherWrap.querySelector('#themeDropdown') || document.getElementById('themeDropdown');
+
+      if (toggleBtn && dropdown) {
+        toggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = dropdown.classList.toggle('is-open');
+          switcherWrap.classList.toggle('is-open', isOpen);
+        });
+
+        dropdown.querySelectorAll('.theme-option').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const targetTheme = btn.getAttribute('data-set-theme');
+            if (targetTheme) {
+              applyTheme(targetTheme);
+              dropdown.classList.remove('is-open');
+              switcherWrap.classList.remove('is-open');
+            }
+          });
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!switcherWrap.contains(e.target)) {
+            dropdown.classList.remove('is-open');
+            switcherWrap.classList.remove('is-open');
+          }
+        });
+      }
+    }
+
     /* ==========================================================================
        1. Sticky Header & Mobile Menu Toggle
        ========================================================================== */
@@ -943,5 +1067,330 @@
         card.style.transform = '';
       });
     });
+
+    /* ==========================================================================
+       11. INTERACTIVE CLICK-TO-RUN FAN SYSTEM & SOUND SYNTHESIS
+       ========================================================================== */
+    function initInteractiveFans() {
+      const fanCards = document.querySelectorAll('.ge-interactive-fan-card');
+      if (fanCards.length === 0) return;
+
+      // Synthesized Web Audio Soft Air Whoosh / Breeze (no external audio file required)
+      let audioCtx = null;
+      let noiseNode = null;
+      let gainNode = null;
+      let isSoundEnabled = false;
+
+      function initAudio() {
+        if (!audioCtx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) {
+            audioCtx = new AudioContext();
+            const bufferSize = audioCtx.sampleRate * 2;
+            const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+            const output = noiseBuffer.getChannelData(0);
+            let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+            for (let i = 0; i < bufferSize; i++) {
+              const white = Math.random() * 2 - 1;
+              b0 = 0.99886 * b0 + white * 0.0555179;
+              b1 = 0.99332 * b1 + white * 0.0750759;
+              b2 = 0.96900 * b2 + white * 0.1538520;
+              b3 = 0.86650 * b3 + white * 0.3104856;
+              b4 = 0.55000 * b4 + white * 0.5329522;
+              b5 = -0.7616 * b5 - white * 0.0168980;
+              output[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.06;
+              b6 = white * 0.115926;
+            }
+
+            noiseNode = audioCtx.createBufferSource();
+            noiseNode.buffer = noiseBuffer;
+            noiseNode.loop = true;
+
+            const filter = audioCtx.createBiquadFilter();
+            filter.type = 'lowpass';
+            filter.frequency.setValueAtTime(360, audioCtx.currentTime);
+
+            gainNode = audioCtx.createGain();
+            gainNode.gain.setValueAtTime(0, audioCtx.currentTime);
+
+            noiseNode.connect(filter);
+            filter.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            noiseNode.start(0);
+          }
+        }
+      }
+
+      function updateAudioVolume() {
+        if (!audioCtx || !gainNode) return;
+        const runningCount = document.querySelectorAll('.ge-interactive-fan-card.is-running').length;
+        if (isSoundEnabled && runningCount > 0) {
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const targetGain = Math.min(0.22, 0.05 + (runningCount * 0.015));
+          gainNode.gain.setTargetAtTime(targetGain, audioCtx.currentTime, 0.2);
+        } else {
+          gainNode.gain.setTargetAtTime(0, audioCtx.currentTime, 0.2);
+        }
+      }
+
+      const soundBtn = document.getElementById('fanSoundToggleBtn');
+      if (soundBtn) {
+        soundBtn.addEventListener('click', () => {
+          initAudio();
+          isSoundEnabled = !isSoundEnabled;
+          soundBtn.classList.toggle('is-active', isSoundEnabled);
+          const icon = document.getElementById('soundIcon');
+          const text = document.getElementById('soundText');
+          if (icon) icon.textContent = isSoundEnabled ? '🔊' : '🔇';
+          if (text) text.textContent = isSoundEnabled ? 'Breeze Sound ON' : 'Sound OFF';
+          updateAudioVolume();
+        });
+      }
+
+      // Clean Fan Cards: Clicking fan image directly toggles fan ON (round & round spin) & OFF
+      fanCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('a')) return;
+          initAudio();
+          const isRunning = card.classList.contains('is-fan-on') || card.classList.contains('is-running');
+          const shouldRun = !isRunning;
+          card.classList.toggle('is-fan-on', shouldRun);
+          card.classList.toggle('is-running', shouldRun);
+
+          const indicator = card.querySelector('.ge-fan-run-indicator span, .ge-hint-text');
+          if (indicator) {
+            indicator.textContent = shouldRun ? '🌀 RUNNING (Click to Stop)' : '⚡ Click Fan to Spin';
+          }
+          updateAudioVolume();
+        });
+      });
+
+      // Master Run All / Stop All buttons
+      const runAllBtn = document.getElementById('runAllFansBtn');
+      const stopAllBtn = document.getElementById('stopAllFansBtn');
+
+      if (runAllBtn) {
+        runAllBtn.addEventListener('click', () => {
+          initAudio();
+          fanCards.forEach(card => {
+            card.classList.add('is-fan-on');
+            card.classList.add('is-running');
+            const indicator = card.querySelector('.ge-fan-run-indicator span, .ge-hint-text');
+            if (indicator) indicator.textContent = '🌀 RUNNING (Click to Stop)';
+          });
+          updateAudioVolume();
+        });
+      }
+
+      if (stopAllBtn) {
+        stopAllBtn.addEventListener('click', () => {
+          fanCards.forEach(card => {
+            card.classList.remove('is-fan-on');
+            card.classList.remove('is-running');
+            const indicator = card.querySelector('.ge-fan-run-indicator span, .ge-hint-text');
+            if (indicator) indicator.textContent = '⚡ Click Fan to Spin';
+          });
+          updateAudioVolume();
+        });
+      }
+    }
+
+    /* -------------------------------------------------------------------------
+       7. INTERACTIVE SWITCHES (Click to Toggle ON / OFF, 3D Rocker, LED Glow)
+       ------------------------------------------------------------------------- */
+    function initInteractiveSwitches() {
+      const switchCards = document.querySelectorAll('.ge-interactive-switch-card');
+      const countBadge = document.getElementById('switchesActiveCount');
+      if (!switchCards.length) return;
+
+      function playSwitchSound(isNowOn) {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(isNowOn ? 850 : 420, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.03);
+          gain.gain.setValueAtTime(0.2, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.03);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.03);
+        } catch (e) {}
+      }
+
+      function updateCounter() {
+        const activeCount = document.querySelectorAll('.ge-interactive-switch-card.is-switch-on').length;
+        if (countBadge) {
+          countBadge.innerHTML = 'Active: <strong>' + activeCount + ' / ' + switchCards.length + '</strong>';
+        }
+      }
+
+      function toggleSwitch(card) {
+        const isNowOn = !card.classList.contains('is-switch-on');
+        card.classList.toggle('is-switch-on', isNowOn);
+        card.classList.toggle('is-switch-off', !isNowOn);
+
+        const hintText = card.querySelector('.ge-switch-hint-text');
+        if (hintText) {
+          hintText.textContent = isNowOn ? 'SWITCH ON [Active]' : 'Click Switch [OFF]';
+        }
+
+        const stateText = card.querySelector('.ge-switch-state-text');
+        if (stateText) {
+          stateText.textContent = isNowOn ? 'Switch: ON' : 'Switch: OFF';
+        }
+
+        playSwitchSound(isNowOn);
+        updateCounter();
+      }
+
+      switchCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('a')) return;
+          toggleSwitch(card);
+        });
+      });
+
+      const turnAllOnBtn = document.getElementById('turnAllSwitchesOnBtn');
+      const turnAllOffBtn = document.getElementById('turnAllSwitchesOffBtn');
+
+      if (turnAllOnBtn) {
+        turnAllOnBtn.addEventListener('click', () => {
+          switchCards.forEach(card => {
+            card.classList.add('is-switch-on');
+            card.classList.remove('is-switch-off');
+            const hintText = card.querySelector('.ge-switch-hint-text');
+            if (hintText) hintText.textContent = 'SWITCH ON [Active]';
+            const stateText = card.querySelector('.ge-switch-state-text');
+            if (stateText) stateText.textContent = 'Switch: ON';
+          });
+          playSwitchSound(true);
+          updateCounter();
+        });
+      }
+
+      if (turnAllOffBtn) {
+        turnAllOffBtn.addEventListener('click', () => {
+          switchCards.forEach(card => {
+            card.classList.remove('is-switch-on');
+            card.classList.add('is-switch-off');
+            const hintText = card.querySelector('.ge-switch-hint-text');
+            if (hintText) hintText.textContent = 'Click Switch [OFF]';
+            const stateText = card.querySelector('.ge-switch-state-text');
+            if (stateText) stateText.textContent = 'Switch: OFF';
+          });
+          playSwitchSound(false);
+          updateCounter();
+        });
+      }
+
+      updateCounter();
+    }
+
+    /* -------------------------------------------------------------------------
+       8. INTERACTIVE TUBELIGHTS & BULBS (Default OFF, Click to Turn ON)
+       ------------------------------------------------------------------------- */
+    function initInteractiveTubelights() {
+      const lightCards = document.querySelectorAll('.ge-interactive-light-card');
+      const countBadge = document.getElementById('lightsActiveCount');
+      if (!lightCards.length) return;
+
+      function playLightSound(isNowOn) {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(isNowOn ? 880 : 350, ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(isNowOn ? 1200 : 180, ctx.currentTime + 0.08);
+          gain.gain.setValueAtTime(0.18, ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.08);
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start();
+          osc.stop(ctx.currentTime + 0.08);
+        } catch (e) {}
+      }
+
+      function updateCounter() {
+        const activeCount = document.querySelectorAll('.ge-interactive-light-card.is-light-on').length;
+        if (countBadge) {
+          countBadge.innerHTML = 'Illuminated: <strong>' + activeCount + ' / ' + lightCards.length + '</strong>';
+        }
+      }
+
+      function toggleLight(card) {
+        const isNowOn = !card.classList.contains('is-light-on');
+        card.classList.toggle('is-light-on', isNowOn);
+        card.classList.toggle('is-light-off', !isNowOn);
+
+        const hintIcon = card.querySelector('.ge-light-hint-icon');
+        const hintText = card.querySelector('.ge-light-hint-text');
+        if (hintIcon) hintIcon.textContent = isNowOn ? '💡' : '🌑';
+        if (hintText) {
+          hintText.textContent = isNowOn ? 'Light ON • Radiant (Click OFF)' : 'Light OFF • Click to ON';
+        }
+
+        const btnText = card.querySelector('.ge-light-btn-text');
+        if (btnText) {
+          btnText.textContent = isNowOn ? 'Turn OFF Light' : 'Turn ON Light';
+        }
+
+        playLightSound(isNowOn);
+        updateCounter();
+      }
+
+      lightCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (e.target.closest('a')) return;
+          toggleLight(card);
+        });
+      });
+
+      const turnAllOnBtn = document.getElementById('turnAllLightsOnBtn');
+      const turnAllOffBtn = document.getElementById('turnAllLightsOffBtn');
+
+      if (turnAllOnBtn) {
+        turnAllOnBtn.addEventListener('click', () => {
+          lightCards.forEach(card => {
+            card.classList.add('is-light-on');
+            card.classList.remove('is-light-off');
+            const hintIcon = card.querySelector('.ge-light-hint-icon');
+            const hintText = card.querySelector('.ge-light-hint-text');
+            if (hintIcon) hintIcon.textContent = '💡';
+            if (hintText) hintText.textContent = 'Light ON • Radiant (Click OFF)';
+            const btnText = card.querySelector('.ge-light-btn-text');
+            if (btnText) btnText.textContent = 'Turn OFF Light';
+          });
+          playLightSound(true);
+          updateCounter();
+        });
+      }
+
+      if (turnAllOffBtn) {
+        turnAllOffBtn.addEventListener('click', () => {
+          lightCards.forEach(card => {
+            card.classList.remove('is-light-on');
+            card.classList.add('is-light-off');
+            const hintIcon = card.querySelector('.ge-light-hint-icon');
+            const hintText = card.querySelector('.ge-light-hint-text');
+            if (hintIcon) hintIcon.textContent = '🌑';
+            if (hintText) hintText.textContent = 'Light OFF • Click to ON';
+            const btnText = card.querySelector('.ge-light-btn-text');
+            if (btnText) btnText.textContent = 'Turn ON Light';
+          });
+          playLightSound(false);
+          updateCounter();
+        });
+      }
+
+      updateCounter();
+    }
+
+    initInteractiveFans();
+    initInteractiveSwitches();
+    initInteractiveTubelights();
   });
 })();

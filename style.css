@@ -1,24 +1,35 @@
-﻿/* ==========================================================================
-   Gupta Electronics - Premium Dark Theme Stylesheet
+/* ==========================================================================
+   Gupta Electronics - Ultra-Luxury Theme Engine
    Proprietor: Suresh Gupta | Dhar Road, Manawar (M.P.) 454446
+   Themes: Royal Obsidian Gold (Default), Midnight Sapphire, Emerald Prestige, Pearl Luxe
    ========================================================================== */
 
-:root {
-  /* Dark Theme Color Palette */
-  --navy: #080e1a;
-  --navy-surface: #0b1424;
-  --navy-card: #0f1c30;
-  --navy-card-hover: #152744;
-  --blue: #173b5d;
-  --pale: #0c1626;
+:root,
+[data-theme="royal-gold"],
+[data-theme="dark"] {
+  /* 1. Royal Obsidian & 24K Champagne Gold (Flagship Luxury Theme) */
+  --navy: #090b10;
+  --navy-surface: #0f131d;
+  --navy-card: #141926;
+  --navy-card-hover: #1b2234;
+  --blue: #18243b;
+  --pale: #0b0e16;
 
-  /* Luxury Gold & Accent Accents */
-  --gold: #d6ad62;
-  --gold-light: #f5d28b;
-  --gold-glow: rgba(214, 173, 98, 0.35);
-  --gold-dark: #b88d44;
-  --cyan: #00e5ff;
-  --cyan-glow: rgba(0, 229, 255, 0.35);
+  /* Luxury Gold & Metallic Accents */
+  --gold: #e5b25d;
+  --gold-light: #fae3ac;
+  --gold-bright: #ffe6a3;
+  --gold-glow: rgba(229, 178, 93, 0.4);
+  --gold-subtle: rgba(229, 178, 93, 0.12);
+  --gold-dark: #b88628;
+  --gold-gradient: linear-gradient(135deg, #fae3ac 0%, #e5b25d 50%, #c69238 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #ffffff 0%, #fae3ac 35%, #e5b25d 100%);
+
+  /* Supporting Luxury Accents */
+  --accent-secondary: #f59e0b;
+  --accent-glow: rgba(245, 158, 11, 0.35);
+  --cyan: #38bdf8;
+  --cyan-glow: rgba(56, 189, 248, 0.35);
   --emerald: #10b981;
   --wa-green: #25d366;
 
@@ -27,19 +38,168 @@
   --ink-secondary: #cbd5e1;
   --muted: #94a3b8;
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-gold: rgba(214, 173, 98, 0.25);
+  --border-gold: rgba(229, 178, 93, 0.32);
   --border-card: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(9, 11, 16, 0.88);
+  --header-bg-scrolled: rgba(9, 11, 16, 0.96);
+  --hero-overlay-1: rgba(9, 11, 16, 0.94);
+  --hero-overlay-2: rgba(9, 11, 16, 0.76);
+  --hero-overlay-3: rgba(9, 11, 16, 0.42);
+  --ambient-glow: radial-gradient(circle, rgba(229, 178, 93, 0.16) 0%, rgba(245, 158, 11, 0.07) 50%, transparent 75%);
+  --button-text: #090b10;
+  --btn-shadow-bevel: #9e6f18;
 
   /* Fonts */
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.6);
-  --shadow-gold: 0 8px 25px rgba(214, 173, 98, 0.25);
-  --shadow-cyan: 0 8px 25px rgba(0, 229, 255, 0.25);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.7);
+  --shadow-gold: 0 8px 25px rgba(229, 178, 93, 0.35);
+  --shadow-cyan: 0 8px 25px rgba(56, 189, 248, 0.25);
+}
+
+/* 2. Midnight Sapphire & Tech Platinum */
+[data-theme="sapphire-luxe"] {
+  --navy: #060913;
+  --navy-surface: #0a1122;
+  --navy-card: #0f1a33;
+  --navy-card-hover: #16254a;
+  --blue: #1c2e58;
+  --pale: #080d1a;
+
+  --gold: #38bdf8;
+  --gold-light: #bae6fd;
+  --gold-bright: #e0f2fe;
+  --gold-glow: rgba(56, 189, 248, 0.45);
+  --gold-subtle: rgba(56, 189, 248, 0.12);
+  --gold-dark: #0284c7;
+  --gold-gradient: linear-gradient(135deg, #bae6fd 0%, #38bdf8 50%, #0284c7 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #ffffff 0%, #bae6fd 35%, #38bdf8 100%);
+
+  --accent-secondary: #818cf8;
+  --accent-glow: rgba(129, 140, 248, 0.35);
+  --cyan: #38bdf8;
+  --cyan-glow: rgba(56, 189, 248, 0.4);
+  --emerald: #10b981;
+  --wa-green: #25d366;
+
+  --ink: #f8fafc;
+  --ink-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(56, 189, 248, 0.32);
+  --border-card: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(6, 9, 19, 0.88);
+  --header-bg-scrolled: rgba(6, 9, 19, 0.96);
+  --hero-overlay-1: rgba(6, 9, 19, 0.94);
+  --hero-overlay-2: rgba(6, 9, 19, 0.76);
+  --hero-overlay-3: rgba(6, 9, 19, 0.42);
+  --ambient-glow: radial-gradient(circle, rgba(56, 189, 248, 0.18) 0%, rgba(99, 102, 241, 0.08) 50%, transparent 75%);
+  --button-text: #050812;
+  --btn-shadow-bevel: #0369a1;
+
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.75);
+  --shadow-gold: 0 8px 25px rgba(56, 189, 248, 0.35);
+  --shadow-cyan: 0 8px 25px rgba(56, 189, 248, 0.35);
+}
+
+/* 3. Emerald Prestige (Royal Jade & Champagne) */
+[data-theme="emerald-prestige"] {
+  --navy: #050d0a;
+  --navy-surface: #0a1813;
+  --navy-card: #0f241d;
+  --navy-card-hover: #153429;
+  --blue: #16362a;
+  --pale: #07120e;
+
+  --gold: #10b981;
+  --gold-light: #6ee7b7;
+  --gold-bright: #a7f3d0;
+  --gold-glow: rgba(16, 185, 129, 0.45);
+  --gold-subtle: rgba(16, 185, 129, 0.12);
+  --gold-dark: #047857;
+  --gold-gradient: linear-gradient(135deg, #a7f3d0 0%, #10b981 50%, #047857 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #ffffff 0%, #a7f3d0 35%, #10b981 100%);
+
+  --accent-secondary: #e5b25d;
+  --accent-glow: rgba(229, 178, 93, 0.35);
+  --cyan: #34d399;
+  --cyan-glow: rgba(52, 211, 153, 0.4);
+  --emerald: #10b981;
+  --wa-green: #25d366;
+
+  --ink: #f8fafc;
+  --ink-secondary: #cbd5e1;
+  --muted: #94a3b8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-gold: rgba(16, 185, 129, 0.32);
+  --border-card: rgba(255, 255, 255, 0.1);
+  --header-bg: rgba(5, 13, 10, 0.88);
+  --header-bg-scrolled: rgba(5, 13, 10, 0.96);
+  --hero-overlay-1: rgba(5, 13, 10, 0.94);
+  --hero-overlay-2: rgba(5, 13, 10, 0.76);
+  --hero-overlay-3: rgba(5, 13, 10, 0.42);
+  --ambient-glow: radial-gradient(circle, rgba(16, 185, 129, 0.18) 0%, rgba(229, 178, 93, 0.08) 50%, transparent 75%);
+  --button-text: #030a07;
+  --btn-shadow-bevel: #065f46;
+
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.75);
+  --shadow-gold: 0 8px 25px rgba(16, 185, 129, 0.35);
+  --shadow-cyan: 0 8px 25px rgba(52, 211, 153, 0.35);
+}
+
+/* 4. Pearl & Champagne Light Mode */
+[data-theme="pearl-luxury"] {
+  --navy: #f8fafc;
+  --navy-surface: #ffffff;
+  --navy-card: #ffffff;
+  --navy-card-hover: #f1f5f9;
+  --blue: #e2e8f0;
+  --pale: #f1f5f9;
+
+  --gold: #b47a16;
+  --gold-light: #d99a2b;
+  --gold-bright: #94600e;
+  --gold-glow: rgba(180, 122, 22, 0.35);
+  --gold-subtle: rgba(180, 122, 22, 0.1);
+  --gold-dark: #784d08;
+  --gold-gradient: linear-gradient(135deg, #e5b25d 0%, #b47a16 60%, #8c5a08 100%);
+  --gold-gradient-hover: linear-gradient(135deg, #f5d28b 0%, #c8891d 60%, #94600e 100%);
+
+  --accent-secondary: #0284c7;
+  --accent-glow: rgba(2, 132, 199, 0.25);
+  --cyan: #0284c7;
+  --cyan-glow: rgba(2, 132, 199, 0.25);
+  --emerald: #059669;
+  --wa-green: #16a34a;
+
+  --ink: #0f172a;
+  --ink-secondary: #334155;
+  --muted: #64748b;
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-gold: rgba(180, 122, 22, 0.3);
+  --border-card: rgba(15, 23, 42, 0.08);
+  --header-bg: rgba(248, 250, 252, 0.92);
+  --header-bg-scrolled: rgba(255, 255, 255, 0.98);
+  --hero-overlay-1: rgba(248, 250, 252, 0.94);
+  --hero-overlay-2: rgba(248, 250, 252, 0.82);
+  --hero-overlay-3: rgba(248, 250, 252, 0.55);
+  --ambient-glow: radial-gradient(circle, rgba(180, 122, 22, 0.12) 0%, rgba(2, 132, 199, 0.06) 50%, transparent 75%);
+  --button-text: #ffffff;
+  --btn-shadow-bevel: #633e05;
+
+  --shadow-sm: 0 4px 15px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.09);
+  --shadow-lg: 0 18px 45px rgba(15, 23, 42, 0.12);
+  --shadow-gold: 0 8px 25px rgba(180, 122, 22, 0.22);
+  --shadow-cyan: 0 8px 25px rgba(2, 132, 199, 0.2);
 }
 
 /* ==========================================================================
@@ -100,7 +260,7 @@ button, input, textarea, select {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(8, 14, 26, 0.88);
+  background: var(--header-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);
@@ -108,8 +268,13 @@ button, input, textarea, select {
   padding: 12px 0;
 }
 
+.site-header .ge-wrap {
+  width: 95%;
+  max-width: 1400px;
+}
+
 .site-header.scrolled {
-  background: rgba(8, 14, 26, 0.96);
+  background: var(--header-bg-scrolled);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   padding: 8px 0;
 }
@@ -118,7 +283,8 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: clamp(10px, 1.6vw, 24px);
+  flex-wrap: nowrap;
 }
 
 /* Brand Logo */
@@ -133,9 +299,9 @@ button, input, textarea, select {
   width: 50px;
   height: 50px;
   border-radius: 14px;
-  background: #040812;
-  border: 1.5px solid rgba(0, 229, 255, 0.55);
-  box-shadow: 0 0 22px rgba(0, 229, 255, 0.35);
+  background: radial-gradient(circle at 35% 35%, var(--navy-card-hover), var(--navy));
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 0 22px var(--gold-glow);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,9 +311,9 @@ button, input, textarea, select {
 }
 
 .brand-logo:hover .brand-icon {
-  transform: scale(1.1) rotate(-3deg);
-  border-color: rgba(0, 229, 255, 0.85);
-  box-shadow: 0 0 32px rgba(0, 229, 255, 0.65);
+  transform: scale(1.08) rotate(-2deg);
+  border-color: var(--gold);
+  box-shadow: 0 0 32px var(--gold-glow);
 }
 
 .brand-logo-img {
@@ -172,7 +338,11 @@ button, input, textarea, select {
 }
 
 .brand-name span {
-  color: var(--gold);
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-shadow: 0 0 25px var(--gold-glow);
 }
 
 .brand-tagline {
@@ -186,17 +356,23 @@ button, input, textarea, select {
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: clamp(4px, 0.6vw, 8px);
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-link {
   font-size: 0.92rem;
   font-weight: 600;
   color: var(--ink-secondary);
-  padding: 8px 14px;
+  padding: 8px clamp(8px, 0.9vw, 14px);
   border-radius: 6px;
   transition: all 0.25s ease;
   position: relative;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .nav-link:hover {
@@ -206,11 +382,183 @@ button, input, textarea, select {
 
 .nav-link.active {
   color: var(--gold);
-  background: rgba(214, 173, 98, 0.12);
-  border: 1px solid rgba(214, 173, 98, 0.3);
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold);
 }
 
 /* Header Actions */
+/* ==========================================================================
+   Interactive Luxury Theme Switcher Widget
+   ========================================================================== */
+.theme-switcher-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-gold);
+  border-radius: 20px;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  user-select: none;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--gold-subtle);
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.theme-swatch-preview {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  box-shadow: 0 0 8px var(--gold-glow);
+  display: inline-block;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.theme-name-label {
+  letter-spacing: 0.02em;
+}
+
+.theme-toggle-arrow {
+  transition: transform 0.25s ease;
+}
+
+.theme-switcher-wrap.is-open .theme-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.theme-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 275px;
+  background: var(--navy-card);
+  border: 1.5px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: var(--shadow-lg), 0 0 35px var(--gold-glow);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px) scale(0.96);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.theme-dropdown.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.theme-dropdown-header {
+  padding: 8px 12px 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 4px;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s ease;
+  color: var(--ink);
+  width: 100%;
+}
+
+.theme-option:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--border-subtle);
+  transform: translateX(2px);
+}
+
+.theme-option.is-active {
+  background: var(--gold-subtle);
+  border-color: var(--border-gold);
+}
+
+.theme-swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.gold-swatch {
+  background: linear-gradient(135deg, #fae3ac 0%, #e5b25d 50%, #9e6f18 100%);
+  box-shadow: 0 0 10px rgba(229, 178, 93, 0.6);
+}
+
+.sapphire-swatch {
+  background: linear-gradient(135deg, #bae6fd 0%, #38bdf8 50%, #0369a1 100%);
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
+}
+
+.emerald-swatch {
+  background: linear-gradient(135deg, #a7f3d0 0%, #10b981 50%, #047857 100%);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+}
+
+.pearl-swatch {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #b47a16 100%);
+  box-shadow: 0 0 10px rgba(180, 122, 22, 0.4);
+}
+
+.theme-opt-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-opt-text strong {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.theme-opt-text small {
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.theme-option.is-active .theme-opt-text strong {
+  color: var(--gold);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -222,8 +570,8 @@ button, input, textarea, select {
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: rgba(214, 173, 98, 0.14);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   border-radius: 20px;
   color: var(--gold-light);
   font-size: 0.88rem;
@@ -233,7 +581,7 @@ button, input, textarea, select {
 
 .header-phone-btn:hover {
   background: var(--gold);
-  color: #080e1a;
+  color: var(--button-text);
   transform: translateY(-2px);
   box-shadow: var(--shadow-gold);
 }
@@ -293,23 +641,42 @@ button, input, textarea, select {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 13px 24px;
+  padding: 13px 26px;
   border: 0;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #d6ad62 0%, #ebc982 100%);
-  color: #0a1120 !important;
+  border-radius: 10px;
+  background: var(--gold-gradient);
+  color: var(--button-text) !important;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 4px 18px rgba(214, 173, 98, 0.3);
+  box-shadow: 0 4px 20px var(--gold-glow);
+  position: relative;
+  overflow: hidden;
+}
+
+.ge-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: rotate(25deg);
+  transition: all 0.6s ease;
+  pointer-events: none;
+}
+
+.ge-btn:hover::after {
+  left: 130%;
 }
 
 .ge-btn:hover {
   transform: translateY(-3px);
-  background: linear-gradient(135deg, #f0ce8b 0%, #fbd89a 100%);
-  box-shadow: 0 8px 25px rgba(214, 173, 98, 0.45);
+  background: var(--gold-gradient-hover);
+  box-shadow: 0 8px 28px var(--gold-glow);
 }
 
 .ge-outline {
@@ -391,8 +758,22 @@ button, input, textarea, select {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, rgba(8, 14, 26, 0.92) 0%, rgba(8, 14, 26, 0.75) 45%, rgba(8, 14, 26, 0.45) 100%),
-              linear-gradient(0deg, rgba(8, 14, 26, 0.9) 0%, transparent 45%);
+  background: linear-gradient(90deg, var(--hero-overlay-1) 0%, var(--hero-overlay-2) 48%, var(--hero-overlay-3) 100%),
+              linear-gradient(0deg, var(--navy) 0%, transparent 45%);
+}
+
+.ge-hero::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  width: 550px;
+  height: 550px;
+  background: var(--ambient-glow);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.7;
 }
 
 .ge-hero-grid {
@@ -416,8 +797,8 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(214, 173, 98, 0.15);
-  border: 1px solid rgba(214, 173, 98, 0.4);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   padding: 6px 14px;
   border-radius: 30px;
   font-size: 0.82rem;
@@ -445,11 +826,11 @@ button, input, textarea, select {
 }
 
 .ge-hero h1 span {
-  background: linear-gradient(135deg, #f0ce8b 0%, #ffd98a 60%, #e2b35c 100%);
+  background: var(--gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  text-shadow: 0 0 35px rgba(214, 173, 98, 0.3);
+  text-shadow: 0 0 35px var(--gold-glow);
 }
 
 .ge-hero p {
@@ -565,16 +946,16 @@ button, input, textarea, select {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--gold);
-  background: rgba(214, 173, 98, 0.1);
+  background: var(--gold-subtle);
   padding: 5px 12px;
   border-radius: 20px;
-  border: 1px solid rgba(214, 173, 98, 0.25);
+  border: 1px solid var(--border-gold);
   transition: all 0.25s ease;
 }
 
 .ge-back-home a:hover {
   background: var(--gold);
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 /* ==========================================================================
@@ -583,18 +964,18 @@ button, input, textarea, select {
 .ge-3d-btn {
   position: relative;
   transform-style: preserve-3d;
-  box-shadow: 0 5px 0 #b38b3f, 0 10px 22px rgba(214, 173, 98, 0.4);
+  box-shadow: 0 5px 0 var(--btn-shadow-bevel), 0 10px 22px var(--gold-glow);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .ge-3d-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 7px 0 #b38b3f, 0 14px 28px rgba(214, 173, 98, 0.5);
+  box-shadow: 0 7px 0 var(--btn-shadow-bevel), 0 14px 28px var(--gold-glow);
 }
 
 .ge-3d-btn:active {
   transform: translateY(3px);
-  box-shadow: 0 2px 0 #b38b3f, 0 6px 12px rgba(214, 173, 98, 0.3);
+  box-shadow: 0 2px 0 var(--btn-shadow-bevel), 0 6px 12px var(--gold-glow);
 }
 
 .ge-outline.ge-3d-btn {
@@ -631,7 +1012,7 @@ button, input, textarea, select {
 .ge-orbit-section {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 30%, #0d1a2d 0%, #060b14 70%);
+  background: radial-gradient(circle at 50% 30%, var(--navy-card) 0%, var(--navy) 75%);
   padding: 90px 0 100px;
 }
 
@@ -642,7 +1023,7 @@ button, input, textarea, select {
   width: 900px;
   height: 900px;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(214, 173, 98, 0.12) 0%, rgba(0, 229, 255, 0.08) 45%, transparent 70%);
+  background: var(--ambient-glow);
   pointer-events: none;
   filter: blur(40px);
   z-index: 0;
@@ -673,7 +1054,7 @@ button, input, textarea, select {
 .ge-orbit-view-modes {
   display: inline-flex;
   align-items: center;
-  background: rgba(15, 28, 48, 0.85);
+  background: var(--navy-card);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 30px;
   padding: 4px;
@@ -695,9 +1076,9 @@ button, input, textarea, select {
 }
 
 .ge-orbit-mode-btn.is-active {
-  background: linear-gradient(135deg, #d6ad62 0%, #ebc982 100%);
-  color: #080e1a;
-  box-shadow: 0 4px 15px rgba(214, 173, 98, 0.35);
+  background: var(--gold-gradient);
+  color: var(--button-text);
+  box-shadow: 0 4px 15px var(--gold-glow);
 }
 
 .ge-orbit-actions {
@@ -711,8 +1092,8 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(15, 28, 48, 0.85);
-  border: 1px solid rgba(214, 173, 98, 0.3);
+  background: var(--navy-card);
+  border: 1px solid var(--border-gold);
   color: var(--ink-secondary);
   font-size: 0.82rem;
   font-weight: 700;
@@ -723,7 +1104,7 @@ button, input, textarea, select {
 }
 
 .ge-orbit-action-btn:hover {
-  background: rgba(214, 173, 98, 0.2);
+  background: var(--gold-subtle);
   border-color: var(--gold);
   color: #fff;
 }
@@ -732,7 +1113,7 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: rgba(15, 28, 48, 0.85);
+  background: var(--navy-card);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 4px 10px;
   border-radius: 20px;
@@ -759,7 +1140,7 @@ button, input, textarea, select {
 
 .ge-speed-pill.is-active {
   background: var(--gold);
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 /* 3D Orbit Arena Stage */
@@ -811,8 +1192,8 @@ button, input, textarea, select {
   height: 590px;
   max-width: 88vw;
   max-height: 88vw;
-  border: 1.5px dashed rgba(214, 173, 98, 0.3);
-  box-shadow: 0 0 35px rgba(0, 229, 255, 0.08), inset 0 0 35px rgba(214, 173, 98, 0.06);
+  border: 1.5px dashed var(--border-gold);
+  box-shadow: 0 0 35px var(--gold-glow), inset 0 0 35px var(--gold-subtle);
   animation: orbitTrackCW 56s linear infinite;
 }
 
@@ -821,8 +1202,8 @@ button, input, textarea, select {
   height: 360px;
   max-width: 56vw;
   max-height: 56vw;
-  border: 1.5px dashed rgba(0, 229, 255, 0.38);
-  box-shadow: 0 0 25px rgba(214, 173, 98, 0.15), inset 0 0 25px rgba(0, 229, 255, 0.08);
+  border: 1.5px dashed var(--border-gold);
+  box-shadow: 0 0 25px var(--gold-glow), inset 0 0 25px var(--gold-subtle);
   animation: orbitTrackCCW 36s linear infinite;
 }
 
@@ -983,7 +1364,7 @@ button, input, textarea, select {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1.5px solid rgba(214, 173, 98, 0.4);
+  border: 1.5px solid var(--gold-glow);
   animation: coreRingSonar 3s cubic-bezier(0.16, 1, 0.3, 1) infinite;
 }
 
@@ -1006,7 +1387,7 @@ button, input, textarea, select {
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #253e66 0%, #0d1a2f 60%, #060c16 100%);
   border: 2.5px solid var(--gold);
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8), 0 0 50px rgba(214, 173, 98, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.8), 0 0 50px var(--gold-glow), inset 0 2px 4px rgba(255, 255, 255, 0.35);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1030,8 +1411,8 @@ button, input, textarea, select {
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #d6ad62 0%, #b88d44 100%);
-  color: #080e1a;
+  background: var(--gold-gradient);
+  color: var(--button-text);
   display: grid;
   place-items: center;
   margin-bottom: 5px;
@@ -1059,8 +1440,8 @@ button, input, textarea, select {
 .ge-sun-badge {
   font-size: 0.65rem;
   font-weight: 700;
-  background: rgba(214, 173, 98, 0.2);
-  border: 1px solid rgba(214, 173, 98, 0.4);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   color: var(--gold-light);
   padding: 2px 8px;
   border-radius: 10px;
@@ -1081,12 +1462,12 @@ button, input, textarea, select {
 }
 
 .ge-spotlight-inner {
-  background: linear-gradient(135deg, rgba(15, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
-  border: 1.5px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--gold-glow);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 24px 28px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 25px rgba(214, 173, 98, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 25px var(--gold-subtle);
   transition: all 0.35s ease;
 }
 
@@ -1103,8 +1484,8 @@ button, input, textarea, select {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(214, 173, 98, 0.15);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.78rem;
@@ -1344,12 +1725,12 @@ button, input, textarea, select {
 
 .ge-contact-form-card {
   position: relative;
-  background: linear-gradient(145deg, rgba(15, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
-  border: 1.5px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(145deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--gold-glow);
   backdrop-filter: blur(16px);
   border-radius: 20px;
   padding: 36px 32px;
-  box-shadow: var(--shadow-md), 0 0 25px rgba(214, 173, 98, 0.12);
+  box-shadow: var(--shadow-md), 0 0 25px var(--gold-subtle);
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
@@ -1400,7 +1781,7 @@ button, input, textarea, select {
 .ge-input-wrap input,
 .ge-input-wrap textarea {
   width: 100%;
-  background: rgba(8, 14, 26, 0.85);
+  background: var(--navy-surface);
   border: 1.5px solid rgba(255, 255, 255, 0.12);
   border-radius: 10px;
   padding: 12px 16px;
@@ -1414,8 +1795,8 @@ button, input, textarea, select {
 .ge-input-wrap textarea:focus {
   outline: none;
   border-color: var(--gold);
-  background: rgba(8, 14, 26, 0.98);
-  box-shadow: 0 0 0 3px rgba(214, 173, 98, 0.25);
+  background: var(--navy-surface);
+  box-shadow: 0 0 0 3px var(--border-gold);
 }
 
 .ge-form-actions {
@@ -1432,12 +1813,12 @@ button, input, textarea, select {
 /* Owner & Store Information Card */
 .ge-contact-info-card {
   position: relative;
-  background: linear-gradient(145deg, rgba(15, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
-  border: 1.5px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(145deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--gold-glow);
   backdrop-filter: blur(16px);
   border-radius: 20px;
   padding: 36px 30px;
-  box-shadow: var(--shadow-md), 0 0 25px rgba(214, 173, 98, 0.12);
+  box-shadow: var(--shadow-md), 0 0 25px var(--gold-subtle);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1460,7 +1841,7 @@ button, input, textarea, select {
   border-radius: 50%;
   background: radial-gradient(circle at 35% 35%, #2a4773 0%, #0d1a2f 100%);
   border: 2px solid var(--gold);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 15px rgba(214, 173, 98, 0.35);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--gold-glow);
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -1486,7 +1867,7 @@ button, input, textarea, select {
   font-weight: 900;
   display: grid;
   place-items: center;
-  border: 2px solid #080e1a;
+  border: 2px solid var(--navy);
   box-shadow: 0 0 8px #10b981;
 }
 
@@ -1534,8 +1915,8 @@ button, input, textarea, select {
   flex: 0 0 38px;
   height: 38px;
   border-radius: 10px;
-  background: rgba(214, 173, 98, 0.15);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   color: var(--gold);
   display: grid;
   place-items: center;
@@ -1586,8 +1967,8 @@ button, input, textarea, select {
 /* Map Section Header & Box */
 .ge-map-wrapper,
 .ge-map-full-container {
-  background: linear-gradient(145deg, rgba(15, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
-  border: 1.5px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(145deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--gold-glow);
   border-radius: 20px;
   padding: 30px;
   box-shadow: var(--shadow-md);
@@ -1616,8 +1997,8 @@ button, input, textarea, select {
 }
 
 .ge-map-pin-pill {
-  background: rgba(214, 173, 98, 0.15);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: var(--gold-subtle);
+  border: 1px solid var(--gold-glow);
   color: var(--gold-light);
   font-size: 0.78rem;
   font-weight: 700;
@@ -1675,8 +2056,8 @@ button, input, textarea, select {
 
 .ge-service-card:hover {
   transform: translateY(-8px);
-  border-color: rgba(214, 173, 98, 0.45);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(214, 173, 98, 0.15);
+  border-color: var(--gold-glow);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6), 0 0 20px var(--gold-subtle);
 }
 
 .ge-service-image {
@@ -1701,9 +2082,9 @@ button, input, textarea, select {
   position: absolute;
   top: 14px;
   right: 14px;
-  background: rgba(8, 14, 26, 0.85);
+  background: var(--navy-surface);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(214, 173, 98, 0.4);
+  border: 1px solid var(--gold-glow);
   color: var(--gold-light);
   font-size: 0.72rem;
   font-weight: 800;
@@ -1756,7 +2137,7 @@ button, input, textarea, select {
 /* Dedicated Page Hero Banner */
 .ge-page-hero {
   padding: 65px 0 45px;
-  background: radial-gradient(circle at 50% 20%, rgba(214, 173, 98, 0.12) 0%, rgba(8, 14, 26, 0.98) 75%);
+  background: radial-gradient(circle at 50% 20%, var(--gold-subtle) 0%, var(--navy-surface) 75%);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
 }
@@ -1796,9 +2177,10 @@ button, input, textarea, select {
 }
 
 .ge-page-hero h1 span {
-  background: linear-gradient(135deg, #f0ce8b 0%, #ffd98a 60%, #e2b35c 100%);
+  background: var(--gold-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px var(--gold-glow);
 }
 
 .ge-page-hero p {
@@ -1836,10 +2218,10 @@ button, input, textarea, select {
 }
 
 .ge-filter-btn.active {
-  background: linear-gradient(135deg, #d6ad62 0%, #ebc982 100%);
-  color: #080e1a;
+  background: var(--gold-gradient);
+  color: var(--button-text);
   border-color: var(--gold);
-  box-shadow: 0 4px 15px rgba(214, 173, 98, 0.35);
+  box-shadow: 0 4px 15px var(--gold-glow);
 }
 
 /* Trust Banner Box on Catalog Pages */
@@ -1848,8 +2230,8 @@ button, input, textarea, select {
 }
 
 .ge-trust-box {
-  background: linear-gradient(135deg, rgba(15, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1px solid var(--gold-glow);
   border-radius: 16px;
   padding: 40px;
   display: flex;
@@ -1912,7 +2294,7 @@ button, input, textarea, select {
 .ge-desc-box {
   max-width: 860px;
   margin: -15px auto 40px;
-  background: rgba(15, 28, 48, 0.65);
+  background: var(--navy-card);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(214, 173, 98, 0.28);
   border-radius: 14px;
@@ -1939,7 +2321,7 @@ button, input, textarea, select {
 
 .ge-product-card {
   position: relative;
-  background: linear-gradient(160deg, #12213a 0%, #0a1322 100%);
+  background: linear-gradient(160deg, var(--navy-card) 0%, var(--navy-surface) 100%);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   overflow: hidden;
@@ -1973,7 +2355,7 @@ button, input, textarea, select {
   border-color: rgba(214, 173, 98, 0.55);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9), 
               0 0 30px rgba(214, 173, 98, 0.22),
-              0 0 15px rgba(0, 229, 255, 0.15),
+              0 0 15px var(--gold-glow),
               inset 0 1px 2px rgba(255, 255, 255, 0.25);
 }
 
@@ -1983,7 +2365,7 @@ button, input, textarea, select {
 
 .ge-product-visual {
   height: 240px;
-  background: radial-gradient(circle at 50% 50%, #172d4e 0%, #080f1c 80%);
+  background: radial-gradient(circle at 50% 50%, var(--navy-card-hover) 0%, var(--navy) 85%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2002,10 +2384,10 @@ button, input, textarea, select {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background: rgba(8, 14, 26, 0.88);
+  background: var(--header-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(214, 173, 98, 0.45);
+  border: 1px solid var(--gold-glow);
   color: #ffd166;
   border-radius: 30px;
   z-index: 3;
@@ -2047,7 +2429,7 @@ button, input, textarea, select {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: rgba(8, 14, 26, 0.9);
+  background: var(--navy-surface);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1.5px solid var(--gold);
@@ -2184,7 +2566,7 @@ button, input, textarea, select {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background: rgba(8, 14, 26, 0.92);
+  background: var(--navy-surface);
   border: 1px solid var(--cyan);
   border-radius: 20px;
   padding: 4px 12px;
@@ -2207,11 +2589,11 @@ button, input, textarea, select {
 
 .ge-product-card:hover .ge-floating-switch-badge {
   background: var(--cyan);
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 .ge-product-card:hover .ge-floating-switch-badge .switch-dot {
-  background: #080e1a;
+  background: var(--navy);
 }
 
 /* Interactive Light Glow Badge */
@@ -2219,7 +2601,7 @@ button, input, textarea, select {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background: rgba(8, 14, 26, 0.92);
+  background: var(--navy-surface);
   border: 1px solid var(--gold);
   border-radius: 20px;
   padding: 4px 12px;
@@ -2242,7 +2624,7 @@ button, input, textarea, select {
 
 .ge-product-card:hover .ge-floating-light-badge {
   background: var(--gold);
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 /* Interactive Wire Safety Badge */
@@ -2250,7 +2632,7 @@ button, input, textarea, select {
   position: absolute;
   bottom: 12px;
   right: 12px;
-  background: rgba(8, 14, 26, 0.92);
+  background: var(--navy-surface);
   border: 1px solid #10b981;
   border-radius: 20px;
   padding: 4px 12px;
@@ -2274,15 +2656,15 @@ button, input, textarea, select {
 
 .ge-product-card:hover .ge-floating-wire-badge {
   background: #10b981;
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 .ge-product-card:hover .ge-floating-wire-badge .wire-dot {
-  background: #080e1a;
+  background: var(--navy);
 }
 
 .ge-product-card:hover .ge-floating-light-badge .light-halo {
-  background: #080e1a;
+  background: var(--navy);
 }
 
 /* ==========================================================================
@@ -2290,7 +2672,7 @@ button, input, textarea, select {
    ========================================================================== */
 /* 1. Live Interactive Fan Speed Controller Widget */
 .ge-interactive-fan-widget {
-  background: linear-gradient(135deg, rgba(16, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
   border: 1.5px solid var(--border-gold);
   border-radius: 18px;
   padding: 32px;
@@ -2362,16 +2744,16 @@ button, input, textarea, select {
 }
 
 .ge-speed-btn:hover {
-  background: rgba(214, 173, 98, 0.15);
+  background: var(--gold-subtle);
   border-color: var(--gold);
   color: #fff;
 }
 
 .ge-speed-btn.active {
-  background: linear-gradient(135deg, #d6ad62 0%, #ebc982 100%);
-  color: #080e1a;
+  background: var(--gold-gradient);
+  color: var(--button-text);
   border-color: var(--gold);
-  box-shadow: 0 4px 15px rgba(214, 173, 98, 0.4);
+  box-shadow: 0 4px 15px var(--gold-glow);
 }
 
 .ge-speed-btn.turbo {
@@ -2394,7 +2776,7 @@ button, input, textarea, select {
 }
 
 .ge-fan-stat-box {
-  background: rgba(8, 14, 26, 0.6);
+  background: var(--navy-surface);
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   padding: 10px 14px;
@@ -2415,7 +2797,7 @@ button, input, textarea, select {
 
 /* 2. BLDC Savings Calculator Widget */
 .ge-bldc-calc-box {
-  background: rgba(15, 28, 48, 0.9);
+  background: var(--navy-card);
   border: 1px solid var(--border-subtle);
   border-radius: 14px;
   padding: 24px;
@@ -2455,7 +2837,7 @@ button, input, textarea, select {
 
 /* 3. Interactive Switchboard Simulator (switches.html) */
 .ge-switchboard-sim {
-  background: linear-gradient(135deg, rgba(16, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
   border: 1.5px solid var(--border-gold);
   border-radius: 18px;
   padding: 34px;
@@ -2569,7 +2951,7 @@ button, input, textarea, select {
 
 /* 4. Room Lighting Simulator (tubelights-bulbs.html) */
 .ge-light-sim {
-  background: linear-gradient(135deg, rgba(16, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
   border: 1.5px solid var(--border-gold);
   border-radius: 18px;
   padding: 34px;
@@ -2620,7 +3002,7 @@ button, input, textarea, select {
 
 /* 5. Wire Gauge & Load Calculator (wires.html) */
 .ge-wire-calc {
-  background: linear-gradient(135deg, rgba(16, 28, 48, 0.95) 0%, rgba(8, 14, 26, 0.98) 100%);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
   border: 1.5px solid var(--border-gold);
   border-radius: 18px;
   padding: 34px;
@@ -2640,7 +3022,7 @@ button, input, textarea, select {
   width: 100%;
   padding: 13px 16px;
   border-radius: 8px;
-  background: #080e1a;
+  background: var(--navy);
   color: #fff;
   border: 1px solid var(--border-subtle);
   font-size: 0.95rem;
@@ -2652,7 +3034,7 @@ button, input, textarea, select {
 }
 
 .ge-wire-result-card {
-  background: #080e1a;
+  background: var(--navy);
   border: 1px solid var(--border-gold);
   border-radius: 12px;
   padding: 20px 24px;
@@ -2803,9 +3185,9 @@ button, input, textarea, select {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: rgba(8, 14, 26, 0.9);
+  background: var(--navy-surface);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(214, 173, 98, 0.4);
+  border: 1px solid var(--gold-glow);
   padding: 12px 18px;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -2866,7 +3248,7 @@ button, input, textarea, select {
 }
 
 .ge-about-point:hover {
-  border-color: rgba(214, 173, 98, 0.4);
+  border-color: var(--gold-glow);
 }
 
 .ge-check {
@@ -2933,14 +3315,14 @@ button, input, textarea, select {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #d6ad62 0%, #b88d44 100%);
-  color: #080e1a;
+  background: var(--gold-gradient);
+  color: var(--button-text);
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.1rem;
   display: grid;
   place-items: center;
-  box-shadow: 0 4px 15px rgba(214, 173, 98, 0.35);
+  box-shadow: 0 4px 15px var(--gold-glow);
 }
 
 .ge-owner-label {
@@ -3085,8 +3467,8 @@ button, input, textarea, select {
 .ge-field textarea:focus {
   outline: none;
   border-color: var(--gold);
-  box-shadow: 0 0 0 3px rgba(214, 173, 98, 0.2);
-  background: rgba(8, 14, 26, 0.95);
+  box-shadow: 0 0 0 3px var(--gold-subtle);
+  background: var(--navy-surface);
 }
 
 .ge-field textarea {
@@ -3211,8 +3593,8 @@ button, input, textarea, select {
   flex: 0 0 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(214, 173, 98, 0.15);
-  border: 1px solid rgba(214, 173, 98, 0.3);
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold);
   color: var(--gold);
   display: grid;
   place-items: center;
@@ -3252,7 +3634,7 @@ button, input, textarea, select {
   border-radius: 14px;
   overflow: hidden;
   border: 1.5px solid var(--border-gold);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(214, 173, 98, 0.12);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px var(--gold-subtle);
   background: #0d1726;
   position: relative;
 }
@@ -3292,12 +3674,12 @@ button, input, textarea, select {
 }
 
 .ge-faqs details:hover {
-  border-color: rgba(214, 173, 98, 0.35);
+  border-color: var(--gold-glow);
 }
 
 .ge-faqs details[open] {
   border-color: var(--gold);
-  background: rgba(15, 28, 48, 0.9);
+  background: var(--navy-card);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
@@ -3346,9 +3728,9 @@ button, input, textarea, select {
    9. ENHANCED & ATTRACTIVE SITE FOOTER
    ========================================================================== */
 .ge-footer {
-  background: radial-gradient(circle at 50% 0%, #0d1b32 0%, #060c18 45%, #03060c 100%);
-  border-top: 1px solid rgba(0, 229, 255, 0.25);
-  box-shadow: 0 -15px 50px rgba(0, 229, 255, 0.05);
+  background: radial-gradient(circle at 50% 0%, var(--navy-card) 0%, var(--navy-surface) 45%, var(--navy) 100%);
+  border-top: 1px solid var(--border-gold);
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.5);
   padding: 60px 0 0;
   color: var(--muted);
   position: relative;
@@ -3359,11 +3741,11 @@ button, input, textarea, select {
   content: '';
   position: absolute;
   top: 0;
-  left: 15%;
-  right: 15%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #00e5ff 30%, #d6ad62 70%, transparent);
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+  left: 10%;
+  right: 10%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--gold-light) 30%, var(--gold) 50%, var(--gold-dark) 70%, transparent);
+  box-shadow: 0 0 18px var(--gold-glow);
 }
 
 /* Footer Highlight Ribbon */
@@ -3396,20 +3778,20 @@ button, input, textarea, select {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(0, 229, 255, 0.15), rgba(214, 173, 98, 0.1));
-  border: 1px solid rgba(0, 229, 255, 0.3);
+  background: linear-gradient(135deg, var(--gold-subtle), rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border-gold);
   color: var(--cyan);
   display: grid;
   place-items: center;
   flex-shrink: 0;
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.15);
+  box-shadow: 0 0 15px var(--gold-subtle);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .ge-fhi-item:hover .ge-fhi-icon-wrap {
   transform: translateY(-2px) scale(1.05);
   border-color: var(--cyan);
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+  box-shadow: 0 0 20px var(--gold-glow);
 }
 
 .ge-fhi-text {
@@ -3446,9 +3828,9 @@ button, input, textarea, select {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: #060b14;
-  border: 1.5px solid rgba(0, 229, 255, 0.55);
-  box-shadow: 0 0 22px rgba(214, 173, 98, 0.35);
+  background: var(--navy-card);
+  border: 1.5px solid var(--border-gold);
+  box-shadow: 0 0 22px var(--gold-glow);
   overflow: hidden;
 }
 
@@ -3464,8 +3846,8 @@ button, input, textarea, select {
   align-items: center;
   gap: 12px;
   padding: 12px 16px;
-  background: rgba(214, 173, 98, 0.08);
-  border: 1px solid rgba(214, 173, 98, 0.25);
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold);
   border-radius: 12px;
   margin-bottom: 18px;
 }
@@ -3478,7 +3860,7 @@ button, input, textarea, select {
   padding: 4px 8px;
   border-radius: 6px;
   background: var(--gold);
-  color: #080e1a;
+  color: var(--button-text);
 }
 
 .ge-foc-info {
@@ -3516,8 +3898,8 @@ button, input, textarea, select {
 
 .ge-footer-brand-pills span:hover {
   color: var(--cyan);
-  border-color: rgba(0, 229, 255, 0.4);
-  background: rgba(0, 229, 255, 0.08);
+  border-color: var(--border-gold);
+  background: var(--gold-subtle);
   transform: translateY(-2px);
 }
 
@@ -3624,7 +4006,7 @@ button, input, textarea, select {
   align-items: flex-start;
   gap: 12px;
   padding: 12px 14px;
-  background: rgba(15, 28, 48, 0.4);
+  background: var(--navy-card);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 12px;
   color: #94a3b8;
@@ -3658,8 +4040,8 @@ button, input, textarea, select {
 }
 
 .ge-fcc-action:hover {
-  background: rgba(15, 28, 48, 0.85);
-  border-color: rgba(0, 229, 255, 0.35);
+  background: var(--navy-card);
+  border-color: var(--border-gold);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
@@ -3671,9 +4053,9 @@ button, input, textarea, select {
 
 .ge-fcc-action .call-icon {
   position: relative;
-  background: rgba(0, 229, 255, 0.1);
+  background: var(--gold-subtle);
   color: var(--cyan);
-  border-color: rgba(0, 229, 255, 0.3);
+  border-color: var(--border-gold);
 }
 
 .ge-fcc-action .live-dot {
@@ -3887,14 +4269,14 @@ button, input, textarea, select {
 }
 
 .ge-float-call {
-  background: linear-gradient(135deg, #d6ad62 0%, #b88d44 100%);
-  color: #080e1a;
+  background: var(--gold-gradient);
+  color: var(--button-text);
 }
 
 .ge-float-call:hover {
-  background: linear-gradient(135deg, #ebc982 0%, #d6ad62 100%);
+  background: var(--gold-gradient-hover);
   transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(214, 173, 98, 0.45);
+  box-shadow: 0 12px 30px var(--gold-glow);
 }
 
 /* ==========================================================================
@@ -3943,13 +4325,50 @@ button, input, textarea, select {
   }
 }
 
+@media (max-width: 1200px) and (min-width: 901px) {
+  .nav-link {
+    font-size: 0.86rem;
+    padding: 7px 9px;
+  }
+  .theme-name-label {
+    display: none;
+  }
+  .theme-toggle-btn {
+    padding: 7px 10px;
+  }
+  .header-phone-btn {
+    padding: 7px 12px;
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 1040px) and (min-width: 901px) {
+  .brand-tagline {
+    display: none;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-link {
+    font-size: 0.82rem;
+    padding: 6px 8px;
+  }
+  .nav-menu {
+    gap: 4px;
+  }
+}
+
 @media (max-width: 900px) {
   .site-header .nav-menu {
     position: fixed;
     top: 68px;
     left: 0;
     width: 100%;
-    background: rgba(8, 14, 26, 0.98);
+    background: var(--navy-surface);
     backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 24px;
@@ -3978,6 +4397,16 @@ button, input, textarea, select {
 }
 
 @media (max-width: 600px) {
+  .theme-name-label {
+    display: none;
+  }
+  .theme-toggle-btn {
+    padding: 7px 10px;
+  }
+  .theme-dropdown {
+    right: -25px;
+    min-width: 250px;
+  }
   .ge-wrap {
     width: 90%;
   }
@@ -4121,7 +4550,7 @@ button, input, textarea, select {
 .ge-product-visual {
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 50%, #15253e 0%, #080f1d 100%);
+  background: radial-gradient(circle at 50% 50%, var(--navy-card-hover) 0%, var(--navy) 85%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4140,7 +4569,7 @@ button, input, textarea, select {
 
 .ge-product-card:hover .ge-product-visual img.ge-product-img {
   transform: scale(1.08) rotate(2deg);
-  filter: drop-shadow(0 15px 25px rgba(214, 173, 98, 0.35));
+  filter: drop-shadow(0 15px 25px var(--gold-glow));
 }
 
 /* Dedicated Fan Type Strip directly under the image */
@@ -4150,7 +4579,7 @@ button, input, textarea, select {
   justify-content: space-between;
   gap: 8px;
   padding: 10px 14px;
-  background: linear-gradient(90deg, rgba(15, 28, 48, 0.95) 0%, rgba(10, 19, 34, 0.98) 100%);
+  background: linear-gradient(90deg, var(--navy-card) 0%, rgba(10, 19, 34, 0.98) 100%);
   border-bottom: 1px solid var(--border-subtle);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -4196,9 +4625,9 @@ button, input, textarea, select {
 
 .ge-fan-type-tag.type-ceiling {
   background: rgba(214, 173, 98, 0.18);
-  border: 1.5px solid #d6ad62;
+  border: 1.5px solid var(--gold);
   color: #ffd166;
-  box-shadow: 0 0 12px rgba(214, 173, 98, 0.25);
+  box-shadow: 0 0 12px var(--border-gold);
 }
 
 .ge-fan-type-tag.type-pedestal {
@@ -4248,7 +4677,7 @@ button, input, textarea, select {
 .ge-3d-card:hover,
 .ge-product-card:hover {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55), 0 0 30px rgba(214, 173, 98, 0.22);
-  border-color: rgba(214, 173, 98, 0.45);
+  border-color: var(--gold-glow);
 }
 
 /* 3D Tactile Buttons */
@@ -4261,7 +4690,7 @@ button, input, textarea, select {
 
 .ge-3d-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 7px 0 #b88d44, 0 14px 25px rgba(214, 173, 98, 0.35);
+  box-shadow: 0 7px 0 #b88d44, 0 14px 25px var(--gold-glow);
 }
 
 .ge-3d-btn:active {
@@ -4275,18 +4704,18 @@ button, input, textarea, select {
   align-items: center;
   gap: 10px;
   padding: 8px 18px;
-  background: rgba(15, 28, 48, 0.85);
-  border: 1px solid rgba(214, 173, 98, 0.35);
+  background: var(--navy-card);
+  border: 1px solid var(--gold-glow);
   border-radius: 30px;
   margin-bottom: 24px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 15px rgba(214, 173, 98, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 15px var(--gold-subtle);
   backdrop-filter: blur(10px);
   animation: pillGlow 2s infinite alternate;
 }
 
 @keyframes pillGlow {
-  0% { border-color: rgba(214, 173, 98, 0.35); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-  100% { border-color: rgba(0, 229, 255, 0.5); box-shadow: 0 4px 22px rgba(0, 229, 255, 0.28); }
+  0% { border-color: var(--gold-glow); box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+  100% { border-color: var(--gold); box-shadow: 0 4px 22px var(--gold-glow); }
 }
 
 .ge-hero-dynamic-pill .pill-spark {
@@ -4315,11 +4744,11 @@ button, input, textarea, select {
 }
 
 .ge-showcase-glass {
-  background: linear-gradient(135deg, rgba(16, 28, 48, 0.9) 0%, rgba(8, 14, 26, 0.95) 100%);
-  border: 1.5px solid rgba(214, 173, 98, 0.35);
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--gold-glow);
   border-radius: 18px;
   padding: 24px;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 229, 255, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 30px var(--gold-glow);
   backdrop-filter: blur(16px);
   position: relative;
   overflow: hidden;
@@ -4370,10 +4799,10 @@ button, input, textarea, select {
   font-size: 0.75rem;
   font-weight: 800;
   color: var(--gold);
-  background: rgba(214, 173, 98, 0.12);
+  background: var(--gold-subtle);
   padding: 3px 10px;
   border-radius: 12px;
-  border: 1px solid rgba(214, 173, 98, 0.25);
+  border: 1px solid var(--border-gold);
 }
 
 .ge-showcase-img-wrap {
@@ -4384,7 +4813,7 @@ button, input, textarea, select {
   position: relative;
   margin-bottom: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: #060b14;
+  background: var(--navy-card);
 }
 
 .ge-showcase-img {
@@ -4433,17 +4862,17 @@ button, input, textarea, select {
 .ge-showcase-call-btn {
   font-size: 0.85rem;
   font-weight: 700;
-  color: #080e1a;
-  background: linear-gradient(135deg, #d6ad62 0%, #ebc982 100%);
+  color: var(--button-text);
+  background: var(--gold-gradient);
   padding: 6px 14px;
   border-radius: 6px;
-  box-shadow: 0 3px 12px rgba(214, 173, 98, 0.3);
+  box-shadow: 0 3px 12px var(--border-gold);
   transition: all 0.25s ease;
 }
 
 .ge-showcase-call-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(214, 173, 98, 0.45);
+  box-shadow: 0 6px 18px var(--gold-glow);
 }
 
 @media (max-width: 992px) {
@@ -4465,4 +4894,932 @@ button, input, textarea, select {
     animation: none !important;
     transition: none !important;
   }
+}
+
+
+/* ==========================================================================
+   INTERACTIVE CLICK-TO-RUN FAN MECHANISM & LIVE SHOWROOM
+   ========================================================================== */
+.ge-interactive-fan-card {
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.ge-interactive-fan-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--gold);
+}
+
+.ge-interactive-fan-card.is-running {
+  border-color: var(--gold) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 35px var(--gold-glow), inset 0 1px 2px rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Master Interactive Fan Bar */
+.ge-fan-interactive-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: linear-gradient(135deg, var(--navy-card) 0%, var(--navy-surface) 100%);
+  border: 1.5px solid var(--border-gold);
+  border-radius: 16px;
+  padding: 18px 24px;
+  margin-bottom: 35px;
+  box-shadow: var(--shadow-md), 0 0 30px var(--gold-glow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  flex-wrap: wrap;
+}
+
+.ge-fib-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ge-fib-pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 15px var(--gold-glow);
+  animation: pulseLive 1.5s infinite;
+  flex-shrink: 0;
+}
+
+.ge-fib-info strong {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.ge-fib-info p {
+  font-size: 0.86rem;
+  color: var(--gold-light);
+  margin: 0;
+}
+
+.ge-fib-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ge-sound-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ge-sound-toggle-btn:hover {
+  background: var(--gold-subtle);
+  border-color: var(--border-gold);
+  color: var(--gold-light);
+}
+
+.ge-sound-toggle-btn.is-active {
+  background: var(--gold-subtle);
+  border-color: var(--gold);
+  color: var(--gold-light);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Fan Click Hint Pill on visual */
+.ge-fan-click-hint {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(9, 11, 16, 0.85);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 5;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.ge-interactive-fan-card:hover .ge-fan-click-hint {
+  background: var(--gold);
+  color: var(--button-text);
+  border-color: var(--gold);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px var(--gold-glow);
+}
+
+.ge-interactive-fan-card.is-running .ge-fan-click-hint {
+  background: rgba(16, 185, 129, 0.25);
+  border-color: #10b981;
+  color: #34d399;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.35);
+}
+
+.ge-interactive-fan-card.is-running:hover .ge-fan-click-hint {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+  box-shadow: 0 0 18px rgba(239, 68, 68, 0.45);
+}
+
+/* Continuous Fan Image Spin Animation */
+@keyframes fanImageSpinCW {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.ge-interactive-fan-card.is-running .ge-product-visual img.ge-product-img {
+  animation: fanImageSpinCW var(--card-fan-speed, 0.45s) linear infinite !important;
+  transform-origin: 50% 50% !important;
+  will-change: transform;
+  filter: drop-shadow(0 15px 35px var(--gold-glow)) brightness(1.08) !important;
+}
+
+/* Radiating Wind Ripple Effect */
+.ge-wind-ripple-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.ge-interactive-fan-card.is-running .ge-wind-ripple-layer {
+  opacity: 1;
+}
+
+.ge-wind-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%) scale(0.6);
+  border-radius: 50%;
+  border: 1.5px dashed var(--gold);
+  opacity: 0;
+  animation: windRipplePulse 1.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+.ge-wind-ring.w2 {
+  animation-delay: 0.6s;
+  border-color: var(--cyan);
+}
+
+.ge-wind-ring.w3 {
+  animation-delay: 1.2s;
+  border-color: var(--gold-light);
+}
+
+@keyframes windRipplePulse {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0.75; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+
+/* Card Fan Control Strip */
+.ge-card-fan-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 14px;
+  background: rgba(9, 11, 16, 0.65);
+  border-bottom: 1px solid var(--border-subtle);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.ge-fan-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  background: var(--gold-subtle);
+  border: 1px solid var(--border-gold);
+  border-radius: 16px;
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ge-fan-toggle-btn:hover {
+  background: var(--gold);
+  color: var(--button-text);
+  box-shadow: var(--shadow-gold);
+}
+
+.fan-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #94a3b8;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.ge-interactive-fan-card.is-running .fan-status-dot {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseLive 1.2s infinite;
+}
+
+.ge-interactive-fan-card.is-running .ge-fan-toggle-btn {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: #10b981;
+  color: #34d399;
+}
+
+.ge-interactive-fan-card.is-running .ge-fan-toggle-btn:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: #fff;
+}
+
+.ge-card-speed-pills {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 6px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+
+.ge-card-speed-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: all 0.2s ease;
+}
+
+.ge-card-speed-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ge-card-speed-btn.active {
+  background: var(--gold);
+  color: var(--button-text);
+  box-shadow: 0 0 8px var(--gold-glow);
+}
+
+.ge-card-speed-btn.turbo {
+  color: #f87171;
+}
+
+.ge-card-speed-btn.turbo.active {
+  background: #ef4444;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+.ge-card-rpm-readout {
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .ge-fan-interactive-bar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ge-fib-actions {
+    justify-content: stretch;
+  }
+  .ge-fib-actions button {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+}
+
+/* ==========================================================================
+   INTERACTIVE SWITCHES STYLES (Real-time ON/OFF Toggling, 3D Rocker, LED Glow)
+   ========================================================================== */
+
+/* Switches Master Control Bar */
+.ge-switch-interactive-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 24px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(8, 14, 26, 0.98));
+  border: 1.5px solid rgba(0, 229, 255, 0.28);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 25px rgba(0, 229, 255, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ge-sib-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ge-sib-pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00e5ff;
+  box-shadow: 0 0 14px #00e5ff;
+  animation: sibPulse 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes sibPulse {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 14px #00e5ff; }
+  50% { transform: scale(1.3); opacity: 0.7; box-shadow: 0 0 22px #00e5ff; }
+}
+
+.ge-sib-info strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.ge-sib-info p {
+  margin: 2px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.ge-sib-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ge-switch-counter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+  color: #a5f3fc;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.ge-switch-counter-badge strong {
+  color: #00e5ff;
+}
+
+/* Interactive Switch Product Card */
+.ge-interactive-switch-card {
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.35s ease;
+  position: relative;
+}
+
+.ge-interactive-switch-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 229, 255, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(0, 229, 255, 0.18);
+}
+
+.ge-interactive-switch-card.is-switch-on {
+  border-color: rgba(0, 229, 255, 0.65);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(0, 229, 255, 0.28), inset 0 0 25px rgba(0, 229, 255, 0.06);
+}
+
+/* Switch Click Hint Badge */
+.ge-switch-click-hint {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.ge-interactive-switch-card.is-switch-on .ge-switch-click-hint {
+  background: rgba(0, 229, 255, 0.18);
+  border-color: #00e5ff;
+  color: #00e5ff;
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.45);
+}
+
+/* 3D Rocker Switch Miniature on Card */
+.ge-card-rocker-switch {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 44px;
+  height: 60px;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6), inset 0 2px 3px rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  cursor: pointer;
+  perspective: 250px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ge-rocker-thumb {
+  width: 32px;
+  height: 48px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: perspective(250px) rotateX(16deg);
+  transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.3, 1.2), background 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+}
+
+.ge-rocker-line {
+  width: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+}
+
+.ge-rocker-led {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #475569;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* When Switch is ON */
+.ge-interactive-switch-card.is-switch-on .ge-card-rocker-switch {
+  border-color: rgba(0, 229, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.35), 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+
+.ge-interactive-switch-card.is-switch-on .ge-rocker-thumb {
+  transform: perspective(250px) rotateX(-16deg);
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  box-shadow: 0 -4px 10px rgba(0, 229, 255, 0.25), inset 0 2px 4px rgba(0, 229, 255, 0.2);
+}
+
+.ge-interactive-switch-card.is-switch-on .ge-rocker-led {
+  background: #00e5ff;
+  box-shadow: 0 0 10px #00e5ff, 0 0 18px #00e5ff;
+}
+
+/* Card Control Strip: Switch Toggle Button */
+.ge-card-switch-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  background: rgba(11, 20, 36, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ge-switch-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ge-switch-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ge-switch-led-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #64748b;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ge-interactive-switch-card.is-switch-on .ge-switch-toggle-btn {
+  background: rgba(0, 229, 255, 0.15);
+  border-color: #00e5ff;
+  color: #00e5ff;
+  box-shadow: 0 0 12px rgba(0, 229, 255, 0.3);
+}
+
+.ge-interactive-switch-card.is-switch-on .ge-switch-led-dot {
+  background: #00e5ff;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+.ge-switch-rating-tag {
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* ==========================================================================
+   INTERACTIVE TUBELIGHTS & BULBS STYLES
+   Default State: OFF (Dimmed room & unlit tube)
+   Clicked State: ON (Radiant 2400 lumens illumination & beam glow)
+   ========================================================================== */
+
+/* Tubelights Master Control Bar */
+.ge-light-interactive-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 18px 24px;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.95), rgba(9, 14, 24, 0.98));
+  border: 1.5px solid rgba(255, 215, 0, 0.35);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 25px rgba(255, 215, 0, 0.12);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ge-lib-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ge-lib-pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffd166;
+  box-shadow: 0 0 14px #ffd166;
+  animation: libPulse 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes libPulse {
+  0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 14px #ffd166; }
+  50% { transform: scale(1.3); opacity: 0.7; box-shadow: 0 0 24px #ffd166; }
+}
+
+.ge-lib-info strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.ge-lib-info p {
+  margin: 2px 0 0;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.ge-lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ge-light-counter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  color: #fef08a;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.ge-light-counter-badge strong {
+  color: #ffd166;
+}
+
+/* Interactive Tubelight / Bulb Product Card */
+.ge-interactive-light-card {
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+}
+
+.ge-interactive-light-card:hover {
+  transform: translateY(-6px);
+}
+
+/* DEFAULT STATE: OFF (Dim / Unlit Room & Tube) */
+.ge-interactive-light-card.is-light-off .ge-product-img {
+  filter: brightness(0.28) contrast(1.15) saturate(0.4) grayscale(0.2);
+  transition: filter 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ge-interactive-light-card.is-light-off .ge-product-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(15, 23, 42, 0.45) 0%, rgba(5, 8, 15, 0.82) 100%);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.45s ease;
+}
+
+/* ACTIVATED STATE: ON (Radiant Illumination & Glowing Halo) */
+.ge-interactive-light-card.is-light-on {
+  border-color: rgba(255, 215, 0, 0.65);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), 0 0 45px rgba(255, 230, 150, 0.32), inset 0 0 25px rgba(255, 230, 150, 0.08);
+}
+
+.ge-interactive-light-card.is-light-on .ge-product-img {
+  filter: brightness(1.22) contrast(1.08) saturate(1.18);
+  transition: filter 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+  animation: lightPowerFlicker 0.32s ease-out;
+}
+
+.ge-interactive-light-card.is-light-on .ge-product-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 250, 230, 0.25) 0%, rgba(255, 235, 170, 0.12) 45%, transparent 75%);
+  box-shadow: inset 0 0 45px rgba(255, 240, 180, 0.35);
+  pointer-events: none;
+  z-index: 2;
+  transition: opacity 0.35s ease;
+}
+
+@keyframes lightPowerFlicker {
+  0% { filter: brightness(0.28); }
+  25% { filter: brightness(1.4); }
+  45% { filter: brightness(0.65); }
+  70% { filter: brightness(1.35); }
+  100% { filter: brightness(1.22); }
+}
+
+/* Light Click Hint Badge */
+.ge-light-click-hint {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.ge-interactive-light-card.is-light-on .ge-light-click-hint {
+  background: rgba(255, 215, 0, 0.18);
+  border-color: #ffd166;
+  color: #ffd166;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Card Light Controls Strip */
+.ge-card-light-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 18px;
+  background: rgba(11, 20, 36, 0.98);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ge-light-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ge-light-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ge-interactive-light-card.is-light-on .ge-light-toggle-btn {
+  background: rgba(255, 215, 0, 0.18);
+  border-color: #ffd166;
+  color: #ffd166;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.35);
+}
+
+.ge-light-lumens-tag {
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+}
+
+.ge-interactive-light-card.is-light-on .ge-light-lumens-tag {
+  color: #ffd166;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .ge-switch-interactive-bar,
+  .ge-light-interactive-bar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .ge-sib-actions,
+  .ge-lib-actions {
+    justify-content: stretch;
+  }
+  .ge-sib-actions button,
+  .ge-lib-actions button {
+    flex: 1 1 auto;
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+}
+
+/* ==========================================================================
+   CLEAN MINIMAL FAN CARDS WITH DIRECT IMAGE ROTATION (CLICK TO SPIN)
+   ========================================================================== */
+
+.ge-fan-clean-card {
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.3s ease;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--navy-surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ge-fan-clean-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(214, 173, 98, 0.5);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+}
+
+.ge-fan-clean-card .ge-product-visual {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background: radial-gradient(circle at center, rgba(30, 41, 59, 0.5) 0%, rgba(11, 20, 36, 0.95) 100%);
+}
+
+.ge-fan-clean-card .ge-spin-img {
+  max-height: 200px;
+  max-width: 85%;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* FAN IMAGE SPINS ROUND AND ROUND ON CLICK */
+.ge-fan-clean-card.is-fan-on .ge-spin-img {
+  animation: fanImageRoundSpin 0.5s linear infinite;
+  filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.6));
+}
+
+@keyframes fanImageRoundSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ge-fan-clean-card.is-fan-on {
+  border-color: #00e5ff !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 229, 255, 0.28) !important;
+}
+
+.ge-fan-run-indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+  white-space: nowrap;
+}
+
+.ge-fan-clean-card.is-fan-on .ge-fan-run-indicator {
+  background: rgba(0, 229, 255, 0.2);
+  border-color: #00e5ff;
+  color: #00e5ff;
+  box-shadow: 0 0 14px rgba(0, 229, 255, 0.45);
 }

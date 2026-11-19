@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="royal-gold">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,48 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
+        <!-- Luxury Theme Switcher Widget -->
+        <div class="theme-switcher-wrap" id="themeSwitcherWrap">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Luxury Theme" title="Switch Color Theme" type="button">
+            <span class="theme-swatch-preview gold-swatch" id="themeSwatchPreview"></span>
+            <span class="theme-name-label" id="themeCurrentLabel">Royal Gold</span>
+            <svg class="theme-toggle-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-dropdown-header">Select Premium Aesthetic</div>
+            <button class="theme-option is-active" data-set-theme="royal-gold" type="button">
+              <span class="theme-swatch gold-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Royal Obsidian Gold</strong>
+                <small>Imperial 24K Luxury (Default)</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="sapphire-luxe" type="button">
+              <span class="theme-swatch sapphire-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Midnight Sapphire</strong>
+                <small>Deep Navy & Electric Tech</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="emerald-prestige" type="button">
+              <span class="theme-swatch emerald-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Emerald Prestige</strong>
+                <small>Royal Forest & Champagne</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="pearl-luxury" type="button">
+              <span class="theme-swatch pearl-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Pearl & Champagne Light</strong>
+                <small>Crisp Alabaster Daylight Luxe</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
         <!-- Direct Call to Suresh Gupta -->
         <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta Directly">
           <span class="live-pulse"></span>

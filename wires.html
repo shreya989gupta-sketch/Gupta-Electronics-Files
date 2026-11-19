@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en" data-theme="royal-gold">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,48 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
+        <!-- Luxury Theme Switcher Widget -->
+        <div class="theme-switcher-wrap" id="themeSwitcherWrap">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Luxury Theme" title="Switch Color Theme" type="button">
+            <span class="theme-swatch-preview gold-swatch" id="themeSwatchPreview"></span>
+            <span class="theme-name-label" id="themeCurrentLabel">Royal Gold</span>
+            <svg class="theme-toggle-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-dropdown-header">Select Premium Aesthetic</div>
+            <button class="theme-option is-active" data-set-theme="royal-gold" type="button">
+              <span class="theme-swatch gold-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Royal Obsidian Gold</strong>
+                <small>Imperial 24K Luxury (Default)</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="sapphire-luxe" type="button">
+              <span class="theme-swatch sapphire-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Midnight Sapphire</strong>
+                <small>Deep Navy & Electric Tech</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="emerald-prestige" type="button">
+              <span class="theme-swatch emerald-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Emerald Prestige</strong>
+                <small>Royal Forest & Champagne</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="pearl-luxury" type="button">
+              <span class="theme-swatch pearl-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Pearl & Champagne Light</strong>
+                <small>Crisp Alabaster Daylight Luxe</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
         <!-- Direct Call to Suresh Gupta -->
         <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta Directly">
           <span class="live-pulse"></span>
@@ -66,90 +108,11 @@
 
   <div id="gupta-electronics-site">
     <main>
-      <!-- ==========================================================================
-           PAGE HERO BANNER
-           ========================================================================== -->
-      <section class="ge-page-hero">
-        <div class="ge-wrap">
-          <div class="ge-page-hero-content ge-reveal">
-            <div class="ge-breadcrumb">
-              <a href="index.html">Home</a> <span>/</span> <strong>Wires & Cables</strong>
-            </div>
-            <div class="ge-hero-badge">
-              <span class="ge-pulse-dot"></span>
-              <span>⭐ 100% Pure Electrolytic Bare Copper • ISI Marked • Flame Retardant Low Smoke (FR-LSH)</span>
-            </div>
-            <h1>Certified <span>Wires & Cables</span></h1>
-            <p>
-              Protect your family and building from short-circuits and electrical fires with genuine Polycab Green FR-LSH, Havells LifeLine Plus, Finolex Flamegard, and 3-Core Submersible Flat Agricultural Cables in Manawar.
-            </p>
-
-            <!-- Filter Buttons -->
-            <div class="ge-filter-row" id="wireFilters">
-              <button type="button" class="ge-filter-btn active" data-filter="all">All Cables</button>
-              <button type="button" class="ge-filter-btn" data-filter="house">House Wires FR-LSH</button>
-              <button type="button" class="ge-filter-btn" data-filter="heavy">Heavy Power</button>
-              <button type="button" class="ge-filter-btn" data-filter="submersible">Submersible Pump Cables</button>
-              <button type="button" class="ge-filter-btn" data-filter="flexible">Flexible & Communication</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ==========================================================================
-           INTERACTIVE WIRE GAUGE & ELECTRICAL LOAD CALCULATOR WIDGET
+           WIRES CATALOG GRID
            ========================================================================== -->
-      <section class="ge-section" style="padding: 40px 0 20px;">
-        <div class="ge-wrap">
-          <div class="ge-wire-calc ge-reveal">
-            <div style="text-align: center; max-width: 620px; margin: 0 auto 10px;">
-              <div class="ge-kicker">Safety Recommendation Tool</div>
-              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 6px;">
-                Electrical Wire Gauge & Load Calculator
-              </h3>
-              <p style="color: var(--muted); font-size: 0.9rem;">
-                Select your electrical appliance to calculate the exact recommended copper wire thickness (sq mm) for maximum fire safety!
-              </p>
-            </div>
-
-            <div class="ge-wire-calc-grid">
-              <div>
-                <label for="applianceSelect" style="display: block; font-size: 0.86rem; font-weight: 700; color: var(--ink-secondary); margin-bottom: 8px;">
-                  Select Appliance / Circuit Load:
-                </label>
-                <select id="applianceSelect" class="ge-wire-select">
-                  <option value="lighting">Ceiling Fans & LED Lighting (Up to 800W)</option>
-                  <option value="ac" selected>1.5 Ton Inverter Air Conditioner (Up to 2500W)</option>
-                  <option value="geyser">25L Water Geyser / Room Heater (Up to 3000W)</option>
-                  <option value="pump">5HP Farm Submersible Borewell Motor</option>
-                  <option value="main">Main Meter to Distribution MCB Board (Total House Load)</option>
-                </select>
-
-                <div style="margin-top: 18px; font-size: 0.85rem; color: var(--muted);">
-                  Proprietor tip: Never use sub-standard aluminium or duplicate copper wires for heavy appliances.
-                </div>
-              </div>
-
-              <!-- Result Card -->
-              <div class="ge-wire-result-card" id="wireResultCard">
-                <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--muted); display: block;">Recommended Copper Wire Thickness:</span>
-                <div class="ge-wire-gauge-big" id="wireGaugeDisplay">2.5 sq mm</div>
-                <div style="font-size: 0.92rem; color: #fff; font-weight: 600; margin-bottom: 6px;" id="wireBrandDisplay">
-                  Polycab Green FR-LSH or Havells LifeLine Plus
-                </div>
-                <div style="font-size: 0.82rem; color: #10b981;" id="wireCurrentDisplay">
-                  ✓ Safe Current Capacity: Up to 20 Amperes • Flame Retardant 105°C
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================================
-           WIRES CATALOG GRID (Real Images, Brand Tags, Specs & Interactive Badges)
-           ========================================================================== -->
-      <section class="ge-section ge-pale">
+      <section class="ge-section ge-pale" style="padding-top: 100px;">
         <div class="ge-wrap">
           <div class="ge-heading ge-reveal" style="margin-bottom: 30px;">
             <div class="ge-kicker">ISI Certified Pure Copper</div>

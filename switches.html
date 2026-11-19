@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en" data-theme="royal-gold">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,6 +45,48 @@
 
       <!-- Header Actions -->
       <div class="header-actions">
+        <!-- Luxury Theme Switcher Widget -->
+        <div class="theme-switcher-wrap" id="themeSwitcherWrap">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Luxury Theme" title="Switch Color Theme" type="button">
+            <span class="theme-swatch-preview gold-swatch" id="themeSwatchPreview"></span>
+            <span class="theme-name-label" id="themeCurrentLabel">Royal Gold</span>
+            <svg class="theme-toggle-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-dropdown-header">Select Premium Aesthetic</div>
+            <button class="theme-option is-active" data-set-theme="royal-gold" type="button">
+              <span class="theme-swatch gold-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Royal Obsidian Gold</strong>
+                <small>Imperial 24K Luxury (Default)</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="sapphire-luxe" type="button">
+              <span class="theme-swatch sapphire-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Midnight Sapphire</strong>
+                <small>Deep Navy & Electric Tech</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="emerald-prestige" type="button">
+              <span class="theme-swatch emerald-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Emerald Prestige</strong>
+                <small>Royal Forest & Champagne</small>
+              </div>
+            </button>
+            <button class="theme-option" data-set-theme="pearl-luxury" type="button">
+              <span class="theme-swatch pearl-swatch"></span>
+              <div class="theme-opt-text">
+                <strong>Pearl & Champagne Light</strong>
+                <small>Crisp Alabaster Daylight Luxe</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
         <!-- Direct Call to Suresh Gupta -->
         <a href="tel:9981082392" class="header-phone-btn" id="headerCallBtn" title="Call Suresh Gupta Directly">
           <span class="live-pulse"></span>
@@ -66,107 +108,11 @@
 
   <div id="gupta-electronics-site">
     <main>
-      <!-- ==========================================================================
-           PAGE HERO BANNER
-           ========================================================================== -->
-      <section class="ge-page-hero">
-        <div class="ge-wrap">
-          <div class="ge-page-hero-content ge-reveal">
-            <div class="ge-breadcrumb">
-              <a href="index.html">Home</a> <span>/</span> <strong>Modular Switches & Sockets</strong>
-            </div>
-            <div class="ge-hero-badge">
-              <span class="ge-pulse-dot"></span>
-              <span>⭐ 10 Years Warranty • 1,00,000+ Click Certified • Fire Retardant Polycarbonate</span>
-            </div>
-            <h1>Designer <span>Switches & Plates</span></h1>
-            <p>
-              Experience tactile luxury with Anchor Roma, Goldmedal Curve Toughened Glass Plates, Havells Crabtree Athena, 25A Heavy-Duty AC Starters, and Fast USB Charging Modules. Try the live interactive switchboard simulator below!
-            </p>
-
-            <!-- Filter Buttons -->
-            <div class="ge-filter-row" id="switchFilters">
-              <button type="button" class="ge-filter-btn active" data-filter="all">All Models</button>
-              <button type="button" class="ge-filter-btn" data-filter="switches">Modular Switches</button>
-              <button type="button" class="ge-filter-btn" data-filter="plates">Glass Cover Plates</button>
-              <button type="button" class="ge-filter-btn" data-filter="power">Power Starters & Sockets</button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ==========================================================================
-           INTERACTIVE SWITCHBOARD SIMULATOR WIDGET
+           SWITCHES CATALOG GRID
            ========================================================================== -->
-      <section class="ge-section" style="padding: 40px 0 20px;">
-        <div class="ge-wrap">
-          <div class="ge-switchboard-sim ge-reveal">
-            <div style="text-align: center; max-width: 600px; margin: 0 auto 10px;">
-              <div class="ge-kicker">Interactive Live Simulator</div>
-              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 6px;">
-                Virtual Modular Switchboard Simulator
-              </h3>
-              <p style="color: var(--muted); font-size: 0.9rem;">
-                Click any switch below to toggle it ON and OFF! Watch the glowing cyan LED indicators and feel the mechanical action!
-              </p>
-            </div>
-
-            <!-- Virtual 6-Module Switchboard Plate -->
-            <div class="ge-switchboard-plate" id="virtualSwitchboard">
-              <!-- Switch 1: Ceiling Fan -->
-              <div class="ge-sim-switch is-on" data-target="fan" title="Click to toggle Fan">
-                <span class="sim-indicator"></span>
-                <span class="sim-label">Chhat Fan</span>
-              </div>
-
-              <!-- Switch 2: Main Batten Light -->
-              <div class="ge-sim-switch is-on" data-target="light" title="Click to toggle Light">
-                <span class="sim-indicator"></span>
-                <span class="sim-label">LED Batten</span>
-              </div>
-
-              <!-- Switch 3: Chandelier / Spot -->
-              <div class="ge-sim-switch" data-target="spot" title="Click to toggle Chandelier">
-                <span class="sim-indicator"></span>
-                <span class="sim-label">Chandelier</span>
-              </div>
-
-              <!-- Switch 4: Geyser / AC -->
-              <div class="ge-sim-switch" data-target="power" title="Click to toggle Geyser">
-                <span class="sim-indicator"></span>
-                <span class="sim-label">25A AC</span>
-              </div>
-
-              <!-- Switch 5: Bell Push -->
-              <div class="ge-sim-switch" data-target="bell" title="Click to ring Bell">
-                <span class="sim-indicator"></span>
-                <span class="sim-label">Door Bell</span>
-              </div>
-
-              <!-- Power Socket with USB -->
-              <div class="ge-sim-socket">
-                <div class="ge-sim-socket-holes">
-                  <span class="sim-hole-top"></span>
-                  <div class="sim-holes-bottom">
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                <span style="font-size: 0.65rem; color: var(--gold); font-weight: 700; margin-top: 4px;">16A + USB</span>
-              </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 18px; font-size: 0.85rem; color: var(--gold-light);">
-              Status: <strong id="simStatusText" style="color: #00e5ff;">Ceiling Fan [ON] • LED Batten [ON] • Chandelier [OFF] • AC [OFF]</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================================
-           SWITCHES CATALOG GRID (Real Images, Brand Tags, Specs & Interactive Badges)
-           ========================================================================== -->
-      <section class="ge-section ge-pale">
+      <section class="ge-section ge-pale" style="padding-top: 100px;">
         <div class="ge-wrap">
           <div class="ge-heading ge-reveal" style="margin-bottom: 30px;">
             <div class="ge-kicker">Guaranteed Genuine Spares</div>
@@ -176,272 +122,422 @@
 
           <div class="ge-product-grid" id="switchesCatalogGrid">
 
-            <!-- Item 1: Anchor Roma Classic 6A & 16A Switches -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Modular Switch</span>
-                <img src="assets/switch_item_1.jpg" alt="Anchor Roma Classic Switches" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>1,00,000 Clicks</span></div>
+            <!-- Switch 1: Champagne Gold 3-Gang Modular Plate (User Switch 1) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Champagne Gold</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (6).jpg" alt="Iybris Champagne Gold 3-Switch Modular Plate" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">10A / 240V~</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Anchor by Panasonic</span>
-                <h3 class="ge-product-title">Anchor Roma Classic 6A & 16A Modular Switches</h3>
-                <p class="ge-product-spec">Pure Silver Inlay Contacts • Smooth Click Mechanism • Flame Retardant High Impact Polycarbonate Body • Available in Polar White & Dark Charcoal</p>
+                <span class="ge-brand-tag">Iybris / GreatWhite</span>
+                <h3 class="ge-product-title">Iybris Champagne Gold 3-Switch Luxury Modular Plate</h3>
+                <p class="ge-product-spec">Curved Brushed Metallic Bezel &bull; Triple Soft-Click Rocker Switches &bull; Pure Silver Inlay Contacts &bull; Flame Retardant Polycarbonate</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Anchor%20Roma%20Switches." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Iybris%20Champagne%20Gold%20Plate." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 2: Goldmedal Curve Toughened Black Glass Plate -->
-            <div class="ge-product-card ge-reveal" data-category="plates">
-              <div class="ge-product-visual">
+            <!-- Switch 2: GreatWhite Dual Finish Modular Plates (User Switch 2) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Dual Finish</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (7).jpg" alt="GreatWhite Textured Black & Crisp White Modular Plates" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">10A / 240V~</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">GreatWhite Luxury</span>
+                <h3 class="ge-product-title">GreatWhite Textured Black & Pearl White Dual Modular Plates</h3>
+                <p class="ge-product-spec">Ribbed Acoustic Texture Border &bull; High-Impact Ergonomic Rockers &bull; Spark-Free Heavy Duty Mechanism &bull; 1,00,000 Clicks Tested</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">10 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20GreatWhite%20Modular%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 3: Brushed Titanium Champagne Gold 3-Gang (User Switch 3) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Brushed Titanium</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (8).jpg" alt="Brushed Titanium Champagne Gold 3-Switch Plate" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">16A Heavy Duty</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Goldmedal Air Series</span>
+                <h3 class="ge-product-title">Brushed Titanium Champagne Gold 3-Gang Modular Plate</h3>
+                <p class="ge-product-spec">Anodized Metallic Brushed Texture &bull; Matte Charcoal Black Rocker Switches &bull; Beveled Inner Bezel &bull; Zero Fingerprint Smudge</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">Premium Range</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Brushed%20Titanium%20Plate." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 4: Crystal White Glass 3-Switch Plate (User Switch 4) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Crystal Glass</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (10).jpg" alt="Pure White Crystal Glass 3-Switch Plate with LED Slit" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Night LED Slit</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Schneider AvatarOn / Crabtree</span>
+                <h3 class="ge-product-title">Pure White Toughened Glass 3-Switch Plate with LED Slit</h3>
+                <p class="ge-product-spec">Diamond-Polished 4mm Toughened Glass &bull; Satin Silver Switches with Illuminated Night Locator Slit &bull; Scratch-Proof Glass Edge</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">10 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20White%20Glass%20Plate." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 5: Legrand Arteor Satin Grey 2-Module (User Switch 5) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches plates">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Satin Charcoal</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (11).jpg" alt="Legrand Arteor Satin Grey 2-Module Plate" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">10A / 250V~</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Legrand France</span>
+                <h3 class="ge-product-title">Legrand Arteor Satin Grey 2-Module Modular Switch Plate</h3>
+                <p class="ge-product-spec">Minimalist Chamfered Edge &bull; Acoustic Dampened Silent Switch Action &bull; Dual 10A/16A Modular Socket Support &bull; Anti-Arcing Terminals</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">10 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Legrand%20Arteor%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 6: Modular 6-Module Combined Switch & Socket Gang Box (User Switch 6) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches power">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Combined Wall Box</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/1-1-gang-switch-socket-combined-box-modular-size-6m-only-for-enriched-0-original-imagbxzwynwnmnwz.webp" alt="Modular 6M Combined Switch and Socket Box" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">6M Gang Box</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Anchor Roma / Cona</span>
+                <h3 class="ge-product-title">Modular 6-Module Combined Switch &amp; 16A Socket Gang Box</h3>
+                <p class="ge-product-spec">15cm x 7.5cm Modular Size &bull; 4 Rocker Switches + 1 Heavy 16A Shuttered 3-Pin Socket &bull; Solid Brass Internal Busbars &bull; Surface / Flush Mount</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">Heavy Duty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%206M%20Combined%20Gang%20Box." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 7: Anchor Roma 4-Switch + Socket Combined Box (User Switch 7) -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches power">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Surface Gang Combo</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switches/images (9).jpg" alt="Anchor Roma 4-Switch 1-Socket Combined Box" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">4S + 1 Socket</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Anchor by Panasonic</span>
+                <h3 class="ge-product-title">Anchor Roma 4-Switch + 16A Heavy Shuttered Socket Unit</h3>
+                <p class="ge-product-spec">Wall Surface Mounting &bull; 4 Heavy Duty Piano Rocker Switches &bull; Shuttered Safety Refrigerator / Geyser 16A Socket &bull; Shockproof Body</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">10 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Anchor%20Combined%20Unit." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 8: Anchor Roma Classic 6A & 16A Switches -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Modular Switch</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_1.jpg" alt="Anchor Roma Classic Switches" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">1,00,000 Clicks</span>
+              </div>
+              <div class="ge-product-info">
+                <span class="ge-brand-tag">Anchor by Panasonic</span>
+                <h3 class="ge-product-title">Anchor Roma Classic 6A &amp; 16A Modular Switches</h3>
+                <p class="ge-product-spec">Pure Silver Inlay Contacts &bull; Smooth Click Mechanism &bull; Flame Retardant High Impact Polycarbonate Body &bull; Polar White &bull; 10-Yr Guarantee</p>
+                <div class="ge-product-footer">
+                  <span class="ge-warranty-badge">10 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Anchor%20Roma%20Switches." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Switch 9: Goldmedal Curve Toughened Black Glass Plate -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
                 <span class="ge-prod-chip">Glass Cover Plate</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
                 <img src="assets/switch_item_2.jpg" alt="Goldmedal Curve Glass Plates" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Diamond Beveled</span></div>
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Diamond Beveled</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Goldmedal Curve</span>
                 <h3 class="ge-product-title">Goldmedal Curve Toughened Black Glass Plate</h3>
-                <p class="ge-product-spec">Diamond-Cut Beveled Edges • Scratch-Proof & Non-Fading Toughened Glass • Available in 2, 4, 6, 8, 12 & 18 Module Plates for Modern Halls</p>
+                <p class="ge-product-spec">Diamond-Cut Beveled Edges &bull; Scratch-Proof &amp; Non-Fading Toughened Glass &bull; Available in 2, 4, 6, 8, 12 &amp; 18 Module Plates for Modern Halls</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">Premium Range</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Goldmedal%20Glass%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Goldmedal%20Glass%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 3: Goldmedal Champagne Gold Glass Plate -->
-            <div class="ge-product-card ge-reveal" data-category="plates">
-              <div class="ge-product-visual">
+            <!-- Switch 10: Goldmedal Champagne Gold Glass Plate -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="plates">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
                 <span class="ge-prod-chip">Champagne Gold</span>
-                <img src="assets/switch_item_3.jpg" alt="Goldmedal Champagne Gold Glass Plate" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Royal Glass</span></div>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_3.jpg" alt="Goldmedal Champagne Gold Glass Modular Plate" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Mirror Polish</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Goldmedal Curve</span>
                 <h3 class="ge-product-title">Goldmedal Champagne Gold Glass Modular Plate</h3>
-                <p class="ge-product-spec">Royal Metallic Champagne Gold Finish • Matches Warm Interior Woodwork & False Ceilings • UV-Treated Gloss Coating</p>
+                <p class="ge-product-spec">Opulent Metallic Under-Glass Pigment &bull; Fingerprint Resistant Oleophobic Coating &bull; Compatible with all Curve series switches</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">Premium Range</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Champagne%20Gold%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">Luxury Series</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Goldmedal%20Champagne%20Plate." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 4: Havells Crabtree Athena Matt Grey Soft-Click Switches -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Luxury Soft-Click</span>
-                <img src="assets/switch_item_4.jpg" alt="Havells Crabtree Athena" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Soundless Click</span></div>
+            <!-- Switch 11: Crabtree Athena Matt Grey Soft-Click Switches -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Soft Click</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_4.jpg" alt="Crabtree Athena Matt Grey Switches" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Acoustic Muted</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Havells Crabtree</span>
+                <span class="ge-brand-tag">Crabtree by Havells</span>
                 <h3 class="ge-product-title">Crabtree Athena Matt Grey Soft-Click Switches</h3>
-                <p class="ge-product-spec">Ultra-Slim Flush Mount • Soft Muffled Soundless Click Mechanism • Antibacterial Silver-Ion Coated Surface</p>
+                <p class="ge-product-spec">Acoustically Engineered Muted Clicks &bull; Silky Matte Finish in Gunmetal Grey &bull; Bimetal Heavy Silver Cadmium Contacts for Zero Arcing</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Havells%20Crabtree." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Crabtree%20Athena." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 5: 25A Heavy-Duty AC & Geyser Motor Starter -->
-            <div class="ge-product-card ge-reveal" data-category="power">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Power Starter</span>
-                <img src="assets/switch_item_5.jpg" alt="AC & Geyser Motor Starter" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Mini MCB Inbuilt</span></div>
+            <!-- Switch 12: 25A Heavy-Duty AC & Geyser Starter -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="power switches">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Motor Starter</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_5.jpg" alt="25A AC & Geyser Starter" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">25A Heavy Load</span>
               </div>
               <div class="ge-product-info">
-                <span class="ge-brand-tag">Anchor / Havells</span>
-                <h3 class="ge-product-title">25A Heavy-Duty AC & Geyser Motor Starter</h3>
-                <p class="ge-product-spec">Inbuilt Mini MCB Overload & Short Circuit Protection • Dual Neon Indicator Lights • Pure Heavy Brass Terminal Blocks</p>
+                <span class="ge-brand-tag">Anchor Roma / Havells</span>
+                <h3 class="ge-product-title">25A Heavy-Duty AC &amp; Geyser Motor Starter</h3>
+                <p class="ge-product-spec">In-Built Overload Protection &bull; Handles 1.5 Ton &amp; 2 Ton Inverter ACs + 25L Storage Geysers &bull; High Spark-Quenching Arc Chutes</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">5 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20AC%20Starters." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">Heavy Duty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20the%2025A%20AC%20Starter." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 6: Universal 3-Pin Socket with Dual Fast USB 2.4A Charger -->
-            <div class="ge-product-card ge-reveal" data-category="power">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Smart Sockets</span>
-                <img src="assets/switch_item_6.jpg" alt="USB Charging Socket" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Fast USB 2.4A</span></div>
+            <!-- Switch 13: Universal Power Socket with Dual Fast USB Ports -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="power">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Fast USB Charger</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_6.jpg" alt="Universal Power Socket with Dual USB" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Type-C + USB-A</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Goldmedal / Anchor</span>
                 <h3 class="ge-product-title">Universal Power Socket with Dual Fast USB Ports</h3>
-                <p class="ge-product-spec">Direct Smart Phone Fast Charging without Adapter • Universal 3-Pin Grounded Plug • Child Safety Shutter Protection</p>
+                <p class="ge-product-spec">16A Universal 3-Pin Socket + 2.4A Fast USB-A &amp; Type-C Quick Charging Ports &bull; Child Safety Shutters &bull; Eliminates charging adapters</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20USB%20Sockets." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20USB%20Modular%20Sockets." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 7: Stepless Hum-Free Rotary Fan Regulator -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Fan Regulator</span>
-                <img src="assets/switch_item_7.jpg" alt="Hum-Free Fan Regulator" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Zero Hum Sound</span></div>
+            <!-- Switch 14: Roma 100W Stepless Hum-Free Fan Regulator -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="regulators">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Hum-Free</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_7.jpg" alt="Roma 100W Hum-Free Fan Regulator" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">100W Stepless</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Anchor Roma</span>
                 <h3 class="ge-product-title">Roma 100W Stepless Hum-Free Fan Regulator</h3>
-                <p class="ge-product-spec">Zero Buzzing or Humming Sound in Fan • Smooth 360-Degree Stepless Speed Control • High Reliability Capacitive Electronics</p>
+                <p class="ge-product-spec">360&deg; Full Rotary Knob &bull; Zero Buzzing Noise on Inverters &bull; Micro-Step Speed Control &bull; Heavy Capacitive Internal Circuit</p>
                 <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">2 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Fan%20Regulators." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <span class="ge-warranty-badge">5 Years Warranty</span>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Roma%20Fan%20Regulators." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
 
-            <!-- Item 8: Schneider Electric AvatarOn Mirror Surface Switch -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Designer Switch</span>
-                <img src="assets/switch_item_8.jpg" alt="Schneider Electric AvatarOn Switch" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Frameless Mirror</span></div>
+            <!-- Switch 15: Schneider AvatarOn Frameless Designer Switches -->
+            <div class="ge-product-card ge-reveal ge-interactive-switch-card is-switch-off" data-category="switches plates">
+              <div class="ge-product-visual" title="Click to Toggle Switch ON / OFF">
+                <span class="ge-prod-chip">Frameless Edge</span>
+                <div class="ge-switch-click-hint"><span class="ge-switch-hint-icon">&#9889;</span><span class="ge-switch-hint-text">Click Switch [OFF]</span></div>
+                <img src="assets/switch_item_8.jpg" alt="Schneider AvatarOn Frameless Switches" class="ge-product-img" loading="lazy">
+                <div class="ge-card-rocker-switch" title="Click to Toggle Switch">
+                  <div class="ge-rocker-thumb">
+                    <span class="ge-rocker-line"></span>
+                    <span class="ge-rocker-led"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="ge-card-switch-controls">
+                <button type="button" class="ge-switch-toggle-btn" aria-label="Toggle Switch"><span class="ge-switch-led-dot"></span><span class="ge-switch-state-text">Switch: OFF</span></button>
+                <span class="ge-switch-rating-tag">Frameless Luxury</span>
               </div>
               <div class="ge-product-info">
                 <span class="ge-brand-tag">Schneider Electric</span>
                 <h3 class="ge-product-title">Schneider AvatarOn Frameless Designer Switches</h3>
-                <p class="ge-product-spec">Sleek Edge-to-Edge Key Cover • Fluorescent Locator Indicator for Easy Night Finding • Interchangeable Faceplates</p>
+                <p class="ge-product-spec">One-Key Borderless Full Face Actuator &bull; Soft Click Tactile Feel &bull; Ultra-Slim 6.5mm Projection &bull; Award-Winning Architectural Design</p>
                 <div class="ge-product-footer">
                   <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Schneider%20Switches." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 9: Legrand Arteor Smart Touch Switch -->
-            <div class="ge-product-card ge-reveal" data-category="plates">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Smart Touch</span>
-                <img src="assets/switch_item_9.jpg" alt="Legrand Smart Touch Switch" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Capacitive Touch</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Legrand Arteor</span>
-                <h3 class="ge-product-title">Legrand Smart Feather-Touch Modular Switches</h3>
-                <p class="ge-product-spec">Feather-Light Capacitive Touch • Blue LED Backlight Status • Compatible with Smart Automation Hubs</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">5 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Smart%20Touch%20Switches." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 10: 32A Double Pole Main Isolator Switch -->
-            <div class="ge-product-card ge-reveal" data-category="power">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Main Isolator</span>
-                <img src="assets/switch_item_10.jpg" alt="32A Main Isolator Switch" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Heavy Duty 32A</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Anchor / Havells</span>
-                <h3 class="ge-product-title">32A Double Pole Heavy Main Control Isolator</h3>
-                <p class="ge-product-spec">Simultaneous Phase & Neutral Isolation • Heavy Arc Chutes for Spark Quenching • Heavy Terminal Screws for 6mm² Cables</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">5 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%2032A%20Isolators." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 11: Anchor Roma 16A Heavy Duty Power Socket -->
-            <div class="ge-product-card ge-reveal" data-category="power">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Heavy Power</span>
-                <img src="assets/switch_item_11.jpg" alt="Anchor Roma 16A Heavy Power Socket" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>16A Shuttered</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Anchor Roma</span>
-                <h3 class="ge-product-title">Anchor Roma 16A Power Socket with Safety Shutter</h3>
-                <p class="ge-product-spec">Engineered for Refrigerator, Microwave & Iron • Spring-Loaded Brass Terminals • Child-Proof Internal Safety Shutters</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Roma%2016A%20Sockets." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 12: Goldmedal Air Ultra-Flat Modular Switch White -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Ultra-Flat</span>
-                <img src="assets/switch_item_12.jpg" alt="Goldmedal Air Ultra-Flat Switch" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Flush Profile</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Goldmedal Air</span>
-                <h3 class="ge-product-title">Goldmedal Air Series Ultra-Flat Modular Switch</h3>
-                <p class="ge-product-spec">Super-Slim Architectural Profile • Minimalist Feather Touch Feel • Pure White Gloss UV Non-Yellowing Surface</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Goldmedal%20Air%20Switches." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 13: Crabtree Verona Natural Wooden Finish Cover Plate -->
-            <div class="ge-product-card ge-reveal" data-category="plates">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Wood Finish</span>
-                <img src="assets/switch_item_13.jpg" alt="Crabtree Verona Wooden Plate" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Natural Walnut</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Havells Crabtree</span>
-                <h3 class="ge-product-title">Crabtree Verona Natural Wooden Finish Plate</h3>
-                <p class="ge-product-spec">Authentic Hardwood Grain Texture • Perfect for Luxury Living Rooms & Wooden Wall Paneling • Scratch Resistant Coating</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">Premium Collection</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Crabtree%20Wooden%20Plates." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 14: Polycab Etira 1-Way Modular Switch with Indicator -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Indicator Switch</span>
-                <img src="assets/switch_item_14.jpg" alt="Polycab Etira Switch" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Neon Glow</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Polycab Etira</span>
-                <h3 class="ge-product-title">Polycab Etira 1-Way Switch with Neon Indicator</h3>
-                <p class="ge-product-spec">Built-in Subtle Locator Neon • Heavy Phosphor Bronze Connectors • Arc Shielded Chamber for High Safety</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">10 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Polycab%20Etira." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 15: Schneider Livia 10A Bell Push Switch with Name Plate -->
-            <div class="ge-product-card ge-reveal" data-category="switches">
-              <div class="ge-product-visual">
-                <span class="ge-prod-chip">Doorbell Switch</span>
-                <img src="assets/switch_item_15.jpg" alt="Schneider Livia Bell Push" class="ge-product-img" loading="lazy">
-                <div class="ge-floating-switch-badge"><span class="switch-dot"></span><span>Bell Push</span></div>
-              </div>
-              <div class="ge-product-info">
-                <span class="ge-brand-tag">Schneider Livia</span>
-                <h3 class="ge-product-title">Schneider Livia 10A Bell Push with Name Indicator</h3>
-                <p class="ge-product-spec">Illuminated Name Slot for House Number • Weatherproof Gasket Seal • Smooth Heavy Return Spring Action</p>
-                <div class="ge-product-footer">
-                  <span class="ge-warranty-badge">5 Years Warranty</span>
-                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Schneider%20Bell%20Push." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price →</a>
+                  <a href="https://wa.me/919981082392?text=Hello%20Suresh%20ji,%20I%20am%20inquiring%20about%20Schneider%20AvatarOn." target="_blank" rel="noopener" class="ge-inquire-btn">Inquire Price &rarr;</a>
                 </div>
               </div>
             </div>
